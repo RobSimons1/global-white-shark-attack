@@ -1,0 +1,15 @@
+#fifty-years .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
+
+#country .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
+
+#activity .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
+
