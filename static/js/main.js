@@ -43,6 +43,7 @@ function writeToDocument(url) {
             pagination = generatePaginationButtons(data.next, data.previous);
         }
         data = data.records;
+        
         var tableHeaders = getTableHeaders(data[0]);
 
         data.forEach(function(item) {
@@ -50,7 +51,6 @@ function writeToDocument(url) {
 
             Object.keys(item).forEach(function(key) {
                 var rowData = item[key].toString();
-                console.log(key);
                 var truncatedData = rowData.substring(0, 15);
                 dataRow.push(`<td>${truncatedData}</td>`);
             });
@@ -60,4 +60,3 @@ function writeToDocument(url) {
         el.innerHTML = `<table>${tableHeaders}${tableRows}</table>${pagination}`.replace(/,/g, "");
     });
 }
-
