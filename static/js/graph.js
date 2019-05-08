@@ -14,6 +14,8 @@ function makeGraphs(error, sharkData) {
     show_countrypi(ndx);
 
     show_years(ndx);
+    
+    show_country_year(ndx);
 
     dc.renderAll();
 
@@ -104,7 +106,7 @@ function show_activity(ndx) {
 
 function show_years(ndx) {
     var date_dim = ndx.dimension(dc.pluck('Year'));
-    var country_date = date_dim.group().reduceSum(dc.pluck('Year'));
+    var country_date = date_dim.group();
 
     dc.lineChart("#chart-here")
         .width(1700)
@@ -116,19 +118,60 @@ function show_years(ndx) {
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .xAxisLabel("Year")
-        .yAxisLabel("Age")
+        .yAxisLabel("Attacks")
         .yAxis().ticks(4);
 }
 
 
 function show_countrypi(ndx) {
     var name_dim = ndx.dimension(dc.pluck('Country'));
-    var total_spend_per_person = name_dim.group().reduceSum(dc.pluck('Year'));
+    var country_attacks = name_dim.group();
+    
     dc.pieChart('#country-chart')
-        .height(330)
-        .radius(90)
-        .transitionDuration(1500)
+        .height(400)
+        .radius(600)
         .dimension(name_dim)
-        .group(total_spend_per_person);
-
+        .group(country_attacks)
+        .transitionDuration(1500)
 }
+
+function show_country_year(ndx) {
+        var date_dim = ndx.dimension(dc.pluck('Year'));
+        var minDate = date_dim.bottom(1)[0].Year;
+        var maxDate = date_dim.top(1)[0].Year;
+        function attack_by_country(Country) {
+            return function(d) {
+                if (d.Country === Country) {
+                    return +d.Country;
+                } else {
+                    return 0;
+                }
+            }
+        }
+        var SouthAfricaByYear = date_dim.group().reduceSum(attack_by_country('SOUTH AFRICA'));
+        var UsaByYear = date_dim.group().reduceSum(attack_by_country('USA'));
+        var AustraliaByYear = date_dim.group().reduceSum(attack_by_country('AUSTRALIA'));
+        
+		var compositeChart = dc.compositeChart('#composite-chart');
+        compositeChart
+            .width(990)
+            .height(200)
+            .dimension(date_dim)
+            .x(d3.time.scale().domain([minDate, maxDate]))
+            .yAxisLabel("Year")
+            .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
+            .renderHorizontalGridLines(true)
+            .compose([
+                dc.lineChart(compositeChart)
+                    .colors('green')
+                    .group(SouthAfricaByYear, 'SOUTH AFRICA'),
+                dc.lineChart(compositeChart)
+                    .colors('red')
+                    .group(UsaByYear, 'USA'),
+                dc.lineChart(compositeChart)
+                    .colors('blue')
+                    .group(AustraliaByYear, 'AUSTRALIA')
+            ])
+            .brushOn(false)
+            .render();
+    }
