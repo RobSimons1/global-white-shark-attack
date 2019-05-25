@@ -1,299 +1,299 @@
-"""""",Year,Type,Country,Activity,Sex,Age,Fatal (Y/N),Species
-1,1968,Unprovoked,NEW ZEALAND,Spearfishing,M,24,Y,White shark
-2,1968,Unprovoked,USA,Diving,M,25,N,White shark
-3,1968,Unprovoked,NEW ZEALAND,Surfing,M,17,N,White shark
-4,1968,Unprovoked,AUSTRALIA,UNKNOWN,M,UNKNOWN,N,White shark
-5,1969,Unprovoked,USA,Diving,M,53,N,White shark
-6,1969,Unprovoked,USA,Diving,M,UNKNOWN,N,White shark
-7,1969,Unprovoked,USA,Surfing,M,16,N,White shark
-8,1970,Unprovoked,CROATIA,Spearfishing,M,UNKNOWN,UNKNOWN,White shark
-9,1971,Unprovoked,SOUTH AFRICA,Swimming,M,50,Y,White shark
-10,1971,Unprovoked,AUSTRALIA,Surfing,M,15,N,White shark
-11,1971,Unprovoked,SOUTH AFRICA,Swimming,F,16,N,White shark
-12,1971,Unprovoked,SOUTH AFRICA,Surfing,M,21,N,White shark
-13,1971,Unprovoked,USA,Scuba diving,M,30,N,White shark
-14,1971,Unprovoked,CROATIA,Swimming,M,34,Y,White shark
-15,1971,Unprovoked,USA,Diving,M,UNKNOWN,N,White shark
-16,1971,Unprovoked,NEW ZEALAND,Surfing,M,16,N,White shark
-17,1972,Unprovoked,SOUTH AFRICA,Swimming,M,UNKNOWN,N,White shark
-18,1972,Unprovoked,FRANCE,Swimming,UNKNOWN,UNKNOWN,N,White shark
-19,1972,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-20,1972,Unprovoked,AUSTRALIA,Diving,M,45,N,White shark
-21,1972,Unprovoked,USA,Diving,M,32,N,White shark
-22,1972,Unprovoked,MOZAMBIQUE,Standing,M,24,N,White shark
-23,1973,Unprovoked,MEXICO,Spearfishing,M,37,Y,White shark
-24,1974,Unprovoked,USA,Diving,M,45,N,White shark
-25,1974,Unprovoked,USA,Diving,M,29,N,White shark
-26,1974,Unprovoked,USA,Scuba diving,M,48,N,White shark
-27,1974,Unprovoked,AUSTRALIA,Diving,M,26,Y,White shark
-28,1974,Unprovoked,USA,Surfing,M,17,N,White shark
-29,1974,Unprovoked,USA,Diving,M,36,N,White shark
-30,1974,Unprovoked,CROATIA,UNKNOWN,M,21,Y,White shark
-31,1974,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-32,1974,Boat,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-33,1974,Unprovoked,USA,Scuba diving,M,41,N,White shark
-34,1974,Unprovoked,USA,Surfing,M,24,N,White shark
-35,1975,Unprovoked,USA,Diving,M,34,N,White shark
-36,1975,Unprovoked,USA,Scuba diving,M,23,N,White shark
-37,1975,Unprovoked,AUSTRALIA,Scuba diving,M,37,Y,White shark
-38,1975,Unprovoked,SOUTH AFRICA,Spearfishing,M,UNKNOWN,N,White shark
-39,1975,Unprovoked,SOUTH AFRICA,Surfing,M,19,N,White shark
-40,1975,Unprovoked,USA,Spearfishing,M,27,N,White shark
-41,1975,Unprovoked,USA,Diving,M,44,N,White shark
-42,1975,Unprovoked,AUSTRALIA,Swimming,M,12,Y,White shark
-43,1976,Unprovoked,USA,Surfing,M,25,N,White shark
-44,1976,Unprovoked,SOUTH AFRICA,Surfing,M,20,N,White shark
-45,1976,Unprovoked,USA,Surfing,M,19,N,White shark
-46,1976,Boat,SOUTH AFRICA,UNKNOWN,UNKNOWN,UNKNOWN,N,White shark
-47,1976,Boat,SOUTH AFRICA,Boat,UNKNOWN,UNKNOWN,N,White shark
-48,1976,Unprovoked,USA,Diving,M,29,N,White shark
-49,1976,Provoked,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-50,1976,Provoked,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-51,1976,Boat,SOUTH AFRICA,UNKNOWN,UNKNOWN,UNKNOWN,N,White shark
-52,1976,Boat,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-53,1976,Unprovoked,SOUTH AFRICA,"Thrashing the water / imitating the shark victim from ""Jaws""",M,19,N,White shark
-54,1977,Unprovoked,SOUTH AFRICA,Spearfishing,M,25,N,White shark
-55,1977,Boat,SOUTH AFRICA,Fishing,M,UNKNOWN,N,White shark
-56,1977,Unprovoked,USA,Fishing,M,20,N,White shark
-57,1977,Unprovoked,AUSTRALIA,Surfing,M,17,N,White shark
-58,1978,Unprovoked,SOUTH AFRICA,Spearfishing,M,23,Y,White shark
-59,1978,Unprovoked,ITALY,Diving,M,UNKNOWN,N,White shark
-60,1978,Unprovoked,SOUTH AFRICA,Spearfishing,M,27,N,White shark
-61,1978,Unprovoked,SOUTH AFRICA,Diving,M,UNKNOWN,N,White shark
-62,1979,Provoked,SOUTH AFRICA,Spearfishing,M,25,N,White shark
-63,1979,Unprovoked,USA,Scuba diving,M,UNKNOWN,N,White shark
-64,1979,Invalid,PORTUGAL,Spearfishing,M,19,Y,White shark
-65,1979,Provoked,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-66,1979,Unprovoked,USA,Surfing,M,20,N,White shark
-67,1980,Unprovoked,CHILE,Diving,M,UNKNOWN,Y,White shark
-68,1981,Unprovoked,BRAZIL,Diving,UNKNOWN,UNKNOWN,UNKNOWN,White shark
-69,1981,Unprovoked,CHILE,Spearfishing,M,UNKNOWN,N,White shark
-70,1982,Unprovoked,USA,Diving,M,36,N,White shark
-71,1982,Boat,ITALY,Fishing,M,UNKNOWN,N,White shark
-72,1983,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-73,1983,Unprovoked,SOUTH AFRICA,Spearfishing,M,32,N,White shark
-74,1984,Boat,ITALY,Boat,UNKNOWN,UNKNOWN,N,White shark
-75,1987,Unprovoked,SOUTH AFRICA,Spearfishing,M,21,N,White shark
-76,1987,Boat,ITALY,Boat,M,UNKNOWN,N,White shark
-77,1987,Unprovoked,AUSTRALIA,Scuba Diving,M,47,Y,White shark
-78,1988,Unprovoked,SOUTH AFRICA,Spearfishing,M,36,N,White shark
-79,1988,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-80,1989,Unprovoked,SOUTH AFRICA,Free diving,M,29,N,White shark
-81,1989,Unprovoked,SOUTH AFRICA,Spearfishing,M,29,Y,White shark
-82,1989,Unprovoked,AUSTRALIA,Surfing,M,UNKNOWN,UNKNOWN,White shark
-83,1989,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-84,1989,Unprovoked,AUSTRALIA,Surfing,M,32,N,White shark
-85,1990,Unprovoked,USA,Spearfishing,M,49,N,White shark
-86,1992,Boat,JAPAN,Fishing,UNKNOWN,UNKNOWN,N,White shark
-87,1993,Unprovoked,USA,Spearfishing,M,55,N,White shark
-88,1993,Boat,EL SALVADOR,Fishing,UNKNOWN,UNKNOWN,Y,White shark
-89,1994,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-90,1995,Unprovoked,AUSTRALIA,Diving,M,29,Y,White shark
-91,1995,Unprovoked,USA,Kayaking,F,UNKNOWN,N,White shark
-92,1995,Unprovoked,SOUTH AFRICA,Surfing,M,UNKNOWN,N,White shark
-93,1996,Unprovoked,NEW ZEALAND,Diving,M,23,N,White shark
-94,1996,Provoked,SOUTH AFRICA,Spearfishing,M,29,N,White shark
-95,1997,Unprovoked,SOUTH AFRICA,Spearfishing,M,39,Y,White shark
-96,1997,Unprovoked,OKINAWA,Fishing,M,55,Y,White shark
-97,1997,Boat,AUSTRALIA,Watching seals,UNKNOWN,UNKNOWN,N,White shark
-98,1997,Unprovoked,AUSTRALIA,Scuba diving,M,42,N,White shark
-99,1998,Unprovoked,SOUTH AFRICA,Body Boarding,M,20,Y,White shark
-100,1998,Unprovoked,SOUTH AFRICA,Surfing,M,19,N,White shark
-101,1998,Unprovoked,USA,Surfing,M,32,N,White shark
-102,1998,Unprovoked,SOUTH AFRICA,Spearfishing,M,24,N,White shark
-103,1998,Unprovoked,USA,Body boarding,M,16,N,White shark
-104,1999,Unprovoked,SOUTH AFRICA,Body boarding,M,14,Y,White shark
-105,1999,Unprovoked,SOUTH AFRICA,Surfing,M,29,N,White shark
-106,1999,Unprovoked,SOUTH AFRICA,Surfing,M,35,N,White shark
-107,1999,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-108,1999,Unprovoked,SOUTH AFRICA,Surfing,M,42,N,White shark
-109,1999,Unprovoked,USA,Kayaking,M,37,N,White shark
-110,1999,Unprovoked,SOUTH AFRICA,Surf-skiing,M,UNKNOWN,N,White shark
-111,1999,Unprovoked,SOUTH AFRICA,Spearfishing,M,30,N,White shark
-112,2000,Unprovoked,AUSTRALIA,Swimming,M,49,Y,White shark
-113,2000,Unprovoked,AUSTRALIA,Surfing,M,17,Y,White shark
-114,2000,Unprovoked,AUSTRALIA,Surfing,M,25,Y,White shark
-115,2000,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-116,2000,Unprovoked,AUSTRALIA,Swimming,M,52,N,White shark
-117,2000,Boat,AUSTRALIA,Fishing,UNKNOWN,31,N,White shark
-118,2000,Unprovoked,SOUTH AFRICA,Diving,M,48,N,White shark
-119,2000,Unprovoked,USA,Surfing,M,27,N,White shark
-120,2000,Unprovoked,OKINAWA,Surfing,M,31,Y,White shark
-121,2000,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-122,2000,Unprovoked,SOUTH AFRICA,Swimming,M,UNKNOWN,N,White shark
-123,2001,Unprovoked,SOUTH AFRICA,Surfing,M,46,N,White shark
-124,2001,Provoked,USA,Spearfishing,M,52,N,White shark
-125,2001,Unprovoked,SOUTH AFRICA,Surfing,M,26,N,White shark
-126,2001,Boat,NEW ZEALAND,Kayaking,M,UNKNOWN,N,White shark
-127,2001,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-128,2001,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-129,2002,Unprovoked,SOUTH AFRICA,Surf-skiing,M,47,N,White shark
-130,2002,Unprovoked,AUSTRALIA,Diving,M,23,Y,White shark
-131,2002,Unprovoked,SOUTH AFRICA,Snorkeling,M,25,N,White shark
-132,2003,Unprovoked,PHILIPPINES,Diving,UNKNOWN,UNKNOWN,N,White shark
-133,2003,Unprovoked,SOUTH AFRICA,Surf-skiing,UNKNOWN,UNKNOWN,N,White shark
-134,2003,Unprovoked,SOUTH AFRICA,Body boarding,M,19,Y,White shark
-135,2004,Unprovoked,RUSSIA,Diving,M,UNKNOWN,N,White shark
-136,2004,Boat,NEW ZEALAND,Fishing,UNKNOWN,UNKNOWN,N,White shark
-137,2004,Unprovoked,USA,Surfing,M,26,N,White shark
-138,2004,Unprovoked,SOUTH AFRICA,Swimming,M,21,Y,White shark
-139,2005,Unprovoked,USA,Surfing,M,36,N,White shark
-140,2005,Unprovoked,USA,Surfing,M,30,N,White shark
-141,2005,Unprovoked,AUSTRALIA,Scuba diving,M,23,Y,White shark
-142,2005,Unprovoked,SOUTH AFRICA,Surf-skiing,M,52,N,White shark
-143,2005,Unprovoked,SOUTH AFRICA,Diving,M,22,Y,White shark
-144,2005,Boat,NEW ZEALAND,Fishing,M,39,N,White shark
-145,2006,Unprovoked,USA,Surfing,M,22,N,White shark
-146,2006,Unprovoked,SOUTH AFRICA,Lifesaving drill,M,24,N,White shark
-147,2006,Unprovoked,AUSTRALIA,Body boarding,M,15,N,White shark
-148,2006,Unprovoked,SOUTH AFRICA,Surfing,M,37,N,White shark
-149,2006,Unprovoked,USA,Surfing,M,43,N,White shark
-150,2006,Unprovoked,SOUTH AFRICA,Surf-skiing,M,19,N,White shark
-151,2008,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-152,2007,Unprovoked,USA,Surfing,F,UNKNOWN,N,White shark
-153,2007,Unprovoked,AUSTRALIA,Surf-skiing,F,52,N,White shark
-154,2007,Unprovoked,SOUTH AFRICA,Surfing,M,37,N,White shark
-155,2007,Unprovoked,SEYCHELLES,Snorkeling,M,UNKNOWN,N,White shark
-156,2007,Unprovoked,USA,Surfing,M,24,N,White shark
-157,2007,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-158,2007,Unprovoked,AUSTRALIA,Diving,M,41,N,White shark
-159,2007,Boat,USA,Fishing,M,UNKNOWN,N,White shark
-160,2008,Boat,USA,Kayaking,F,40,N,White shark
-161,2008,Unprovoked,USA,Surfing,M,27,N,White shark
-162,2008,Unprovoked,USA,Swimming,M,66,Y,White shark
-163,2008,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-164,2008,Unprovoked,SOUTH AFRICA,Scuba diving,M,UNKNOWN,N,White shark
-165,2008,Unprovoked,SOUTH AFRICA,Surf-skiing,M,46,N,White shark
-166,2008,Boat,AUSTRALIA,Kayaking,M,29,N,White shark
-167,2008,Boat,USA,Kayaking,M,UNKNOWN,N,White shark
-168,2008,Unprovoked,SOUTH AFRICA,Diving,M,UNKNOWN,N,White shark
-169,2008,Unprovoked,AUSTRALIA,Swimming,M,37,N,White shark
-170,2009,Unprovoked,SOUTH AFRICA,Body boarding,M,UNKNOWN,N,White shark
-171,2009,Boat,AUSTRALIA,Fishing,M,UNKNOWN,N,White shark
-172,2009,Unprovoked,AUSTRALIA,Surfing,M,31,N,White shark
-173,2009,Boat,AUSTRALIA,Rowing,UNKNOWN,UNKNOWN,N,White shark
-174,2009,Unprovoked,USA,Spearfishing,M,UNKNOWN,N,White shark
-175,2009,Provoked,VIETNAM,Fishing,M,UNKNOWN,N,White shark
-176,2009,Unprovoked,SOUTH AFRICA,Surfing,M,25,Y,White shark
-177,2009,Boat,AUSTRALIA,Kayaking,M,27,N,White shark
-178,2009,Unprovoked,USA,Swimming,F,22,N,White shark
-179,2009,Unprovoked,AUSTRALIA,Surfing,F,13,N,White shark
-180,2009,Unprovoked,AUSTRALIA,Surfing,M,41,N,White shark
-181,2009,Unprovoked,AUSTRALIA,Surfing,M,33,N,White shark
-182,2009,Unprovoked,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,Y,White shark
-183,2009,Unprovoked,NEW ZEALAND,Swimming,M,24,Y,White shark
-184,2010,Boat,USA,Fishing,M,45,N,White shark
-185,2010,Unprovoked,AUSTRALIA,Snorkeling,F,20,N,White shark
-186,2010,Unprovoked,AUSTRALIA,Body boarding,M,18,N,White shark
-187,2010,Boat,AUSTRALIA,Fishing,M,UNKNOWN,N,White shark
-188,2010,Unprovoked,USA,Body boarding,M,19,Y,White shark
-189,2010,Unprovoked,SOUTH AFRICA,Stand-Up Paddleboarding,M,37,Y,White shark
-190,2010,Unprovoked,SOUTH AFRICA,Swimming,M,29,Y,White shark
-191,2010,Boat,USA,Kayaking,M,UNKNOWN,N,White shark
-192,2010,Unprovoked,USA,Surfing,M,29,N,White shark
-193,2010,Unprovoked,AUSTRALIA,Surfing,M,31,Y,White shark
-194,2011,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-195,2011,Unprovoked,AUSTRALIA,Diving,M,32,Y,White shark
-196,2011,Unprovoked,SOUTH AFRICA,Surfing,M,49,Y,White shark
-197,2011,Unprovoked,AUSTRALIA,Body boarding,M,21,Y,White shark
-198,2011,Unprovoked,AUSTRALIA,Diving,M,49,Y,White shark
-199,2011,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-200,2011,Unprovoked,SOUTH AFRICA,Surfing,M,29,N,White shark
-201,2011,Unprovoked,USA,Surfing,M,27,N,White shark
-202,2011,Unprovoked,SOUTH AFRICA,Surfing,M,33,N,White shark
-203,2011,Unprovoked,USA,Surfing,M,41,N,White shark
-204,2011,Boat,USA,Kayaking,M,UNKNOWN,N,White shark
-205,2011,Unprovoked,SOUTH AFRICA,Swimming,M,43,N,White shark
-206,2011,Unprovoked,AUSTRALIA,Surfing,M,51,N,White shark
-207,2012,Unprovoked,AUSTRALIA,Surfing,M,44,N,White shark
-208,2012,Unprovoked,USA,Surfing,M,25,N,White shark
-209,2012,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-210,2012,Unprovoked,AUSTRALIA,Surf-skiing,M,30,N,White shark
-211,2012,Boat,AUSTRALIA,Kayaking,M,27,N,White shark
-212,2012,Boat,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-213,2012,Boat,USA,Fishing,M,30,N,White shark
-214,2012,Unprovoked,SOUTH AFRICA,Body boarding,M,20,Y,White shark
-215,2012,Unprovoked,AUSTRALIA,Surfing,M,24,Y,White shark
-216,2012,Unprovoked,USA,Stand-Up Paddleboarding,F,15,N,White shark
-217,2012,Unprovoked,AUSTRALIA,Scuba diving,M,33,Y,White shark
-218,2012,Unprovoked,USA,Surfing,M,39,Y,White shark
-219,2012,Unprovoked,USA,Surfing,M,53,N,White shark
-220,2013,Unprovoked,AUSTRALIA,Diving,M,55,N,White shark
-221,2013,Unprovoked,NEW ZEALAND,Swimming,M,46,Y,White shark
-222,2013,Unprovoked,USA,Surfing,M,25,N,White shark
-223,2013,Unprovoked,USA,Surfing,M,45,N,White shark
-224,2013,Boat,AUSTRALIA,Fishing,M,UNKNOWN,N,White shark
-225,2013,Unprovoked,SOUTH AFRICA,Surfing,M,19,N,White shark
-226,2013,Boat,USA,Fishing,M,UNKNOWN,N,White shark
-227,2013,Unprovoked,SOUTH AFRICA,Swimming,M,74,Y,White shark
-228,2013,Unprovoked,USA,Surfing,F,UNKNOWN,N,White shark
-229,2014,Provoked,USA,Swimming,M,UNKNOWN,N,White shark
-230,2014,Boat,SOUTH AFRICA,Shark watching,UNKNOWN,UNKNOWN,N,White shark
-231,2014,Unprovoked,AUSTRALIA,Spearfishing,M,17,Y,White shark
-232,2014,Unprovoked,AUSTRALIA,Surfing,M,35,N,White shark
-233,2014,Boat,USA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-234,2014,Boat,USA,Kayaking,M,UNKNOWN,N,White shark
-235,2014,Boat,NEW ZEALAND,Filming a documentary,UNKNOWN,UNKNOWN,N,White shark
-236,2014,Unprovoked,SOUTH AFRICA,Surfing,M,20,N,White shark
-237,2014,Boat,USA,Kayaking,M,UNKNOWN,N,White shark
-238,2014,Unprovoked,USA,Surfing,M,50,N,White shark
-239,2014,Boat,AUSTRALIA,Fishing,M,UNKNOWN,N,White shark
-240,2014,Boat,USA,Kayaking,F,20s,N,White shark
-241,2015,Boat,USA,Fishing,M,UNKNOWN,N,White shark
-242,2015,Unprovoked,SOUTH AFRICA,Surfing,M,34,N,White shark
-243,2015,Unprovoked,USA,Surfing,M,38,N,White shark
-244,2015,Unprovoked,AUSTRALIA,Body boarding,M,32,N,White shark
-245,2015,Unprovoked,AUSTRALIA,Surfing,M,52,N,White shark
-246,2015,Unprovoked,AUSTRALIA,Surfing,M,UNKNOWN,N,White shark
-247,2015,Unprovoked,AUSTRALIA,Surf-skiing,M,71,N,White shark
-248,2015,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-249,2015,Unprovoked,SOUTH AFRICA,Surfing,M,42,N,White shark
-250,2015,Boat,USA,Fishing,M,22,N,White shark
-251,2015,Boat,SOUTH AFRICA,Fishing,M,36,N,White shark
-252,2015,Boat,USA,Fishing,M,UNKNOWN,N,White shark
-253,2015,Boat,SOUTH AFRICA,Fishing,M,UNKNOWN,N,White shark
-254,2015,Unprovoked,USA,Stand-Up Paddleboarding,F,50,N,White shark
-255,2015,Unprovoked,SOUTH AFRICA,Surfing,M,23,N,White shark
-256,2015,Unprovoked,AUSTRALIA,Surf-skiing,M,62,N,White shark
-257,2015,Unprovoked,USA,Surfing,F,54,N,White shark
-258,2015,Unprovoked,SOUTH AFRICA,Body Boarding,M,19,N,White shark
-259,2015,Unprovoked,SOUTH AFRICA,Diving,M,29,N,White shark
-260,2015,Unprovoked,AUSTRALIA,Surfing,M,26,N,White shark
-261,2015,Invalid,AUSTRALIA,Surfing,F,37,N,White shark
-262,2015,Unprovoked,USA,Surfing,M,21,N,White shark
-263,2015,Boat,ATLANTIC OCEAN,Rowing,UNKNOWN,UNKNOWN,N,White shark
-264,2015,Unprovoked,AUSTRALIA,Diving,M,46,Y,White shark
-265,2015,Unprovoked,AUSTRALIA,Surfing,M,52,N,White shark
-266,2016,Unprovoked,SOUTH AFRICA,Surf-skiing,M,55,N,White shark
-267,2016,Unprovoked,SOUTH AFRICA,Surf-skiing,M,UNKNOWN,N,White shark
-268,2016,Invalid,MEXICO,Cage Diving,M,UNKNOWN,UNKNOWN,White shark
-269,2016,Unprovoked,USA,Spearfishing,M,22,N,White shark
-270,2016,Unprovoked,SOUTH AFRICA,Spearfishing,M,43,N,White shark
-271,2016,Unprovoked,AUSTRALIA,Surfing,M,17,N,White shark
-272,2016,Boat,USA,Fishing,M,UNKNOWN,N,White shark
-273,2016,Unprovoked,AUSTRALIA,Surfing,M,65,N,White shark
-274,2016,Boat,AUSTRALIA,Kayaking,M,UNKNOWN,N,White shark
-275,2016,Boat,USA,Fishing,M,UNKNOWN,N,White shark
-276,2016,Unprovoked,USA,Kite surfing,M,61,N,White shark
-277,2016,Unprovoked,AUSTRALIA,Surfing,M,29,Y,White shark
-278,2017,Unprovoked,AUSTRALIA,Fishing,F,15,N,White shark
-279,2017,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark
-280,2017,Unprovoked,AUSTRALIA,Surfing,M,37,N,White shark
-281,2017,Boat,USA,Kayaking,M,UNKNOWN,N,White shark
-282,2017,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark
-283,2017,Unprovoked,AUSTRALIA,Surfing,M,UNKNOWN,N,White shark
-284,2017,Unprovoked,AUSTRALIA,Surfing,M,35,N,White shark
-285,2017,Boat,USA,Kayaking,M,UNKNOWN,N,White shark
-286,2017,Unprovoked,SOUTH AFRICA,Surfing,F,13,N,White shark
-287,2017,Boat,USA,Kayaking,M,40,N,White shark
-288,2017,Unprovoked,USA,Stand-Up Paddleboarding,M,69,N,White shark
-289,2017,Boat,USA,Kayaking,M,UNKNOWN,N,White shark
-290,2017,Unprovoked,AUSTRALIA,Body boarding,M,48,N,White shark
-291,2017,Unprovoked,AUSTRALIA,Surfing,F,17,Y,White shark
-292,2017,Boat,USA,Tagging sharks,UNKNOWN,UNKNOWN,N,White shark
-293,2017,Unprovoked,USA,Stand-Up Paddleboarding,M,50,N,White shark
-294,2017,Unprovoked,USA,Spearfishing,M,25,N,White shark
-295,2018,Unprovoked,AUSTRALIA,Surfing,M,UNKNOWN,N,White shark
-296,2018,Unprovoked,SOUTH AFRICA,Surf-skiing,M,33,N,White shark
-297,2018,Unprovoked,SOUTH AFRICA,Surfing,M,19,N,White shark
-298,2018,Unprovoked,AUSTRALIA,Diving,M,28,N,White shark
+﻿"""""",Year,Type,Country,Activity,Sex,Age,Fatal (Y/N),Species,Number
+1,1968,Unprovoked,NEW ZEALAND,Spearfishing,M,24,Y,White shark,1
+2,1968,Unprovoked,USA,Diving,M,25,N,White shark,1
+3,1968,Unprovoked,NEW ZEALAND,Surfing,M,17,N,White shark,1
+4,1968,Unprovoked,AUSTRALIA,UNKNOWN,M,UNKNOWN,N,White shark,1
+5,1969,Unprovoked,USA,Diving,M,53,N,White shark,1
+6,1969,Unprovoked,USA,Diving,M,UNKNOWN,N,White shark,1
+7,1969,Unprovoked,USA,Surfing,M,16,N,White shark,1
+8,1970,Unprovoked,CROATIA,Spearfishing,M,UNKNOWN,UNKNOWN,White shark,1
+9,1971,Unprovoked,SOUTH AFRICA,Swimming,M,50,Y,White shark,1
+10,1971,Unprovoked,AUSTRALIA,Surfing,M,15,N,White shark,1
+11,1971,Unprovoked,SOUTH AFRICA,Swimming,F,16,N,White shark,1
+12,1971,Unprovoked,SOUTH AFRICA,Surfing,M,21,N,White shark,1
+13,1971,Unprovoked,USA,Scuba diving,M,30,N,White shark,1
+14,1971,Unprovoked,CROATIA,Swimming,M,34,Y,White shark,1
+15,1971,Unprovoked,USA,Diving,M,UNKNOWN,N,White shark,1
+16,1971,Unprovoked,NEW ZEALAND,Surfing,M,16,N,White shark,1
+17,1972,Unprovoked,SOUTH AFRICA,Swimming,M,UNKNOWN,N,White shark,1
+18,1972,Unprovoked,FRANCE,Swimming,UNKNOWN,UNKNOWN,N,White shark,1
+19,1972,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+20,1972,Unprovoked,AUSTRALIA,Diving,M,45,N,White shark,1
+21,1972,Unprovoked,USA,Diving,M,32,N,White shark,1
+22,1972,Unprovoked,MOZAMBIQUE,Standing,M,24,N,White shark,1
+23,1973,Unprovoked,MEXICO,Spearfishing,M,37,Y,White shark,1
+24,1974,Unprovoked,USA,Diving,M,45,N,White shark,1
+25,1974,Unprovoked,USA,Diving,M,29,N,White shark,1
+26,1974,Unprovoked,USA,Scuba diving,M,48,N,White shark,1
+27,1974,Unprovoked,AUSTRALIA,Diving,M,26,Y,White shark,1
+28,1974,Unprovoked,USA,Surfing,M,17,N,White shark,1
+29,1974,Unprovoked,USA,Diving,M,36,N,White shark,1
+30,1974,Unprovoked,CROATIA,UNKNOWN,M,21,Y,White shark,1
+31,1974,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+32,1974,Boat,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+33,1974,Unprovoked,USA,Scuba diving,M,41,N,White shark,1
+34,1974,Unprovoked,USA,Surfing,M,24,N,White shark,1
+35,1975,Unprovoked,USA,Diving,M,34,N,White shark,1
+36,1975,Unprovoked,USA,Scuba diving,M,23,N,White shark,1
+37,1975,Unprovoked,AUSTRALIA,Scuba diving,M,37,Y,White shark,1
+38,1975,Unprovoked,SOUTH AFRICA,Spearfishing,M,UNKNOWN,N,White shark,1
+39,1975,Unprovoked,SOUTH AFRICA,Surfing,M,19,N,White shark,1
+40,1975,Unprovoked,USA,Spearfishing,M,27,N,White shark,1
+41,1975,Unprovoked,USA,Diving,M,44,N,White shark,1
+42,1975,Unprovoked,AUSTRALIA,Swimming,M,12,Y,White shark,1
+43,1976,Unprovoked,USA,Surfing,M,25,N,White shark,1
+44,1976,Unprovoked,SOUTH AFRICA,Surfing,M,20,N,White shark,1
+45,1976,Unprovoked,USA,Surfing,M,19,N,White shark,1
+46,1976,Boat,SOUTH AFRICA,UNKNOWN,UNKNOWN,UNKNOWN,N,White shark,1
+47,1976,Boat,SOUTH AFRICA,Boat,UNKNOWN,UNKNOWN,N,White shark,1
+48,1976,Unprovoked,USA,Diving,M,29,N,White shark,1
+49,1976,Provoked,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+50,1976,Provoked,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+51,1976,Boat,SOUTH AFRICA,UNKNOWN,UNKNOWN,UNKNOWN,N,White shark,1
+52,1976,Boat,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+53,1976,Unprovoked,SOUTH AFRICA,"Thrashing the water / imitating the shark victim from ""Jaws""",M,19,N,White shark,1
+54,1977,Unprovoked,SOUTH AFRICA,Spearfishing,M,25,N,White shark,1
+55,1977,Boat,SOUTH AFRICA,Fishing,M,UNKNOWN,N,White shark,1
+56,1977,Unprovoked,USA,Fishing,M,20,N,White shark,1
+57,1977,Unprovoked,AUSTRALIA,Surfing,M,17,N,White shark,1
+58,1978,Unprovoked,SOUTH AFRICA,Spearfishing,M,23,Y,White shark,1
+59,1978,Unprovoked,ITALY,Diving,M,UNKNOWN,N,White shark,1
+60,1978,Unprovoked,SOUTH AFRICA,Spearfishing,M,27,N,White shark,1
+61,1978,Unprovoked,SOUTH AFRICA,Diving,M,UNKNOWN,N,White shark,1
+62,1979,Provoked,SOUTH AFRICA,Spearfishing,M,25,N,White shark,1
+63,1979,Unprovoked,USA,Scuba diving,M,UNKNOWN,N,White shark,1
+64,1979,Invalid,PORTUGAL,Spearfishing,M,19,Y,White shark,1
+65,1979,Provoked,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+66,1979,Unprovoked,USA,Surfing,M,20,N,White shark,1
+67,1980,Unprovoked,CHILE,Diving,M,UNKNOWN,Y,White shark,1
+68,1981,Unprovoked,BRAZIL,Diving,UNKNOWN,UNKNOWN,UNKNOWN,White shark,1
+69,1981,Unprovoked,CHILE,Spearfishing,M,UNKNOWN,N,White shark,1
+70,1982,Unprovoked,USA,Diving,M,36,N,White shark,1
+71,1982,Boat,ITALY,Fishing,M,UNKNOWN,N,White shark,1
+72,1983,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+73,1983,Unprovoked,SOUTH AFRICA,Spearfishing,M,32,N,White shark,1
+74,1984,Boat,ITALY,Boat,UNKNOWN,UNKNOWN,N,White shark,1
+75,1987,Unprovoked,SOUTH AFRICA,Spearfishing,M,21,N,White shark,1
+76,1987,Boat,ITALY,Boat,M,UNKNOWN,N,White shark,1
+77,1987,Unprovoked,AUSTRALIA,Scuba Diving,M,47,Y,White shark,1
+78,1988,Unprovoked,SOUTH AFRICA,Spearfishing,M,36,N,White shark,1
+79,1988,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+80,1989,Unprovoked,SOUTH AFRICA,Free diving,M,29,N,White shark,1
+81,1989,Unprovoked,SOUTH AFRICA,Spearfishing,M,29,Y,White shark,1
+82,1989,Unprovoked,AUSTRALIA,Surfing,M,UNKNOWN,UNKNOWN,White shark,1
+83,1989,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+84,1989,Unprovoked,AUSTRALIA,Surfing,M,32,N,White shark,1
+85,1990,Unprovoked,USA,Spearfishing,M,49,N,White shark,1
+86,1992,Boat,JAPAN,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+87,1993,Unprovoked,USA,Spearfishing,M,55,N,White shark,1
+88,1993,Boat,EL SALVADOR,Fishing,UNKNOWN,UNKNOWN,Y,White shark,1
+89,1994,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+90,1995,Unprovoked,AUSTRALIA,Diving,M,29,Y,White shark,1
+91,1995,Unprovoked,USA,Kayaking,F,UNKNOWN,N,White shark,1
+92,1995,Unprovoked,SOUTH AFRICA,Surfing,M,UNKNOWN,N,White shark,1
+93,1996,Unprovoked,NEW ZEALAND,Diving,M,23,N,White shark,1
+94,1996,Provoked,SOUTH AFRICA,Spearfishing,M,29,N,White shark,1
+95,1997,Unprovoked,SOUTH AFRICA,Spearfishing,M,39,Y,White shark,1
+96,1997,Unprovoked,OKINAWA,Fishing,M,55,Y,White shark,1
+97,1997,Boat,AUSTRALIA,Watching seals,UNKNOWN,UNKNOWN,N,White shark,1
+98,1997,Unprovoked,AUSTRALIA,Scuba diving,M,42,N,White shark,1
+99,1998,Unprovoked,SOUTH AFRICA,Body Boarding,M,20,Y,White shark,1
+100,1998,Unprovoked,SOUTH AFRICA,Surfing,M,19,N,White shark,1
+101,1998,Unprovoked,USA,Surfing,M,32,N,White shark,1
+102,1998,Unprovoked,SOUTH AFRICA,Spearfishing,M,24,N,White shark,1
+103,1998,Unprovoked,USA,Body boarding,M,16,N,White shark,1
+104,1999,Unprovoked,SOUTH AFRICA,Body boarding,M,14,Y,White shark,1
+105,1999,Unprovoked,SOUTH AFRICA,Surfing,M,29,N,White shark,1
+106,1999,Unprovoked,SOUTH AFRICA,Surfing,M,35,N,White shark,1
+107,1999,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+108,1999,Unprovoked,SOUTH AFRICA,Surfing,M,42,N,White shark,1
+109,1999,Unprovoked,USA,Kayaking,M,37,N,White shark,1
+110,1999,Unprovoked,SOUTH AFRICA,Surf-skiing,M,UNKNOWN,N,White shark,1
+111,1999,Unprovoked,SOUTH AFRICA,Spearfishing,M,30,N,White shark,1
+112,2000,Unprovoked,AUSTRALIA,Swimming,M,49,Y,White shark,1
+113,2000,Unprovoked,AUSTRALIA,Surfing,M,17,Y,White shark,1
+114,2000,Unprovoked,AUSTRALIA,Surfing,M,25,Y,White shark,1
+115,2000,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+116,2000,Unprovoked,AUSTRALIA,Swimming,M,52,N,White shark,1
+117,2000,Boat,AUSTRALIA,Fishing,UNKNOWN,31,N,White shark,1
+118,2000,Unprovoked,SOUTH AFRICA,Diving,M,48,N,White shark,1
+119,2000,Unprovoked,USA,Surfing,M,27,N,White shark,1
+120,2000,Unprovoked,OKINAWA,Surfing,M,31,Y,White shark,1
+121,2000,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+122,2000,Unprovoked,SOUTH AFRICA,Swimming,M,UNKNOWN,N,White shark,1
+123,2001,Unprovoked,SOUTH AFRICA,Surfing,M,46,N,White shark,1
+124,2001,Provoked,USA,Spearfishing,M,52,N,White shark,1
+125,2001,Unprovoked,SOUTH AFRICA,Surfing,M,26,N,White shark,1
+126,2001,Boat,NEW ZEALAND,Kayaking,M,UNKNOWN,N,White shark,1
+127,2001,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+128,2001,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+129,2002,Unprovoked,SOUTH AFRICA,Surf-skiing,M,47,N,White shark,1
+130,2002,Unprovoked,AUSTRALIA,Diving,M,23,Y,White shark,1
+131,2002,Unprovoked,SOUTH AFRICA,Snorkeling,M,25,N,White shark,1
+132,2003,Unprovoked,PHILIPPINES,Diving,UNKNOWN,UNKNOWN,N,White shark,1
+133,2003,Unprovoked,SOUTH AFRICA,Surf-skiing,UNKNOWN,UNKNOWN,N,White shark,1
+134,2003,Unprovoked,SOUTH AFRICA,Body boarding,M,19,Y,White shark,1
+135,2004,Unprovoked,RUSSIA,Diving,M,UNKNOWN,N,White shark,1
+136,2004,Boat,NEW ZEALAND,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+137,2004,Unprovoked,USA,Surfing,M,26,N,White shark,1
+138,2004,Unprovoked,SOUTH AFRICA,Swimming,M,21,Y,White shark,1
+139,2005,Unprovoked,USA,Surfing,M,36,N,White shark,1
+140,2005,Unprovoked,USA,Surfing,M,30,N,White shark,1
+141,2005,Unprovoked,AUSTRALIA,Scuba diving,M,23,Y,White shark,1
+142,2005,Unprovoked,SOUTH AFRICA,Surf-skiing,M,52,N,White shark,1
+143,2005,Unprovoked,SOUTH AFRICA,Diving,M,22,Y,White shark,1
+144,2005,Boat,NEW ZEALAND,Fishing,M,39,N,White shark,1
+145,2006,Unprovoked,USA,Surfing,M,22,N,White shark,1
+146,2006,Unprovoked,SOUTH AFRICA,Lifesaving drill,M,24,N,White shark,1
+147,2006,Unprovoked,AUSTRALIA,Body boarding,M,15,N,White shark,1
+148,2006,Unprovoked,SOUTH AFRICA,Surfing,M,37,N,White shark,1
+149,2006,Unprovoked,USA,Surfing,M,43,N,White shark,1
+150,2006,Unprovoked,SOUTH AFRICA,Surf-skiing,M,19,N,White shark,1
+151,2008,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+152,2007,Unprovoked,USA,Surfing,F,UNKNOWN,N,White shark,1
+153,2007,Unprovoked,AUSTRALIA,Surf-skiing,F,52,N,White shark,1
+154,2007,Unprovoked,SOUTH AFRICA,Surfing,M,37,N,White shark,1
+155,2007,Unprovoked,SEYCHELLES,Snorkeling,M,UNKNOWN,N,White shark,1
+156,2007,Unprovoked,USA,Surfing,M,24,N,White shark,1
+157,2007,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+158,2007,Unprovoked,AUSTRALIA,Diving,M,41,N,White shark,1
+159,2007,Boat,USA,Fishing,M,UNKNOWN,N,White shark,1
+160,2008,Boat,USA,Kayaking,F,40,N,White shark,1
+161,2008,Unprovoked,USA,Surfing,M,27,N,White shark,1
+162,2008,Unprovoked,USA,Swimming,M,66,Y,White shark,1
+163,2008,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+164,2008,Unprovoked,SOUTH AFRICA,Scuba diving,M,UNKNOWN,N,White shark,1
+165,2008,Unprovoked,SOUTH AFRICA,Surf-skiing,M,46,N,White shark,1
+166,2008,Boat,AUSTRALIA,Kayaking,M,29,N,White shark,1
+167,2008,Boat,USA,Kayaking,M,UNKNOWN,N,White shark,1
+168,2008,Unprovoked,SOUTH AFRICA,Diving,M,UNKNOWN,N,White shark,1
+169,2008,Unprovoked,AUSTRALIA,Swimming,M,37,N,White shark,1
+170,2009,Unprovoked,SOUTH AFRICA,Body boarding,M,UNKNOWN,N,White shark,1
+171,2009,Boat,AUSTRALIA,Fishing,M,UNKNOWN,N,White shark,1
+172,2009,Unprovoked,AUSTRALIA,Surfing,M,31,N,White shark,1
+173,2009,Boat,AUSTRALIA,Rowing,UNKNOWN,UNKNOWN,N,White shark,1
+174,2009,Unprovoked,USA,Spearfishing,M,UNKNOWN,N,White shark,1
+175,2009,Provoked,VIETNAM,Fishing,M,UNKNOWN,N,White shark,1
+176,2009,Unprovoked,SOUTH AFRICA,Surfing,M,25,Y,White shark,1
+177,2009,Boat,AUSTRALIA,Kayaking,M,27,N,White shark,1
+178,2009,Unprovoked,USA,Swimming,F,22,N,White shark,1
+179,2009,Unprovoked,AUSTRALIA,Surfing,F,13,N,White shark,1
+180,2009,Unprovoked,AUSTRALIA,Surfing,M,41,N,White shark,1
+181,2009,Unprovoked,AUSTRALIA,Surfing,M,33,N,White shark,1
+182,2009,Unprovoked,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,Y,White shark,1
+183,2009,Unprovoked,NEW ZEALAND,Swimming,M,24,Y,White shark,1
+184,2010,Boat,USA,Fishing,M,45,N,White shark,1
+185,2010,Unprovoked,AUSTRALIA,Snorkeling,F,20,N,White shark,1
+186,2010,Unprovoked,AUSTRALIA,Body boarding,M,18,N,White shark,1
+187,2010,Boat,AUSTRALIA,Fishing,M,UNKNOWN,N,White shark,1
+188,2010,Unprovoked,USA,Body boarding,M,19,Y,White shark,1
+189,2010,Unprovoked,SOUTH AFRICA,Stand-Up Paddleboarding,M,37,Y,White shark,1
+190,2010,Unprovoked,SOUTH AFRICA,Swimming,M,29,Y,White shark,1
+191,2010,Boat,USA,Kayaking,M,UNKNOWN,N,White shark,1
+192,2010,Unprovoked,USA,Surfing,M,29,N,White shark,1
+193,2010,Unprovoked,AUSTRALIA,Surfing,M,31,Y,White shark,1
+194,2011,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+195,2011,Unprovoked,AUSTRALIA,Diving,M,32,Y,White shark,1
+196,2011,Unprovoked,SOUTH AFRICA,Surfing,M,49,Y,White shark,1
+197,2011,Unprovoked,AUSTRALIA,Body boarding,M,21,Y,White shark,1
+198,2011,Unprovoked,AUSTRALIA,Diving,M,49,Y,White shark,1
+199,2011,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+200,2011,Unprovoked,SOUTH AFRICA,Surfing,M,29,N,White shark,1
+201,2011,Unprovoked,USA,Surfing,M,27,N,White shark,1
+202,2011,Unprovoked,SOUTH AFRICA,Surfing,M,33,N,White shark,1
+203,2011,Unprovoked,USA,Surfing,M,41,N,White shark,1
+204,2011,Boat,USA,Kayaking,M,UNKNOWN,N,White shark,1
+205,2011,Unprovoked,SOUTH AFRICA,Swimming,M,43,N,White shark,1
+206,2011,Unprovoked,AUSTRALIA,Surfing,M,51,N,White shark,1
+207,2012,Unprovoked,AUSTRALIA,Surfing,M,44,N,White shark,1
+208,2012,Unprovoked,USA,Surfing,M,25,N,White shark,1
+209,2012,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+210,2012,Unprovoked,AUSTRALIA,Surf-skiing,M,30,N,White shark,1
+211,2012,Boat,AUSTRALIA,Kayaking,M,27,N,White shark,1
+212,2012,Boat,SOUTH AFRICA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+213,2012,Boat,USA,Fishing,M,30,N,White shark,1
+214,2012,Unprovoked,SOUTH AFRICA,Body boarding,M,20,Y,White shark,1
+215,2012,Unprovoked,AUSTRALIA,Surfing,M,24,Y,White shark,1
+216,2012,Unprovoked,USA,Stand-Up Paddleboarding,F,15,N,White shark,1
+217,2012,Unprovoked,AUSTRALIA,Scuba diving,M,33,Y,White shark,1
+218,2012,Unprovoked,USA,Surfing,M,39,Y,White shark,1
+219,2012,Unprovoked,USA,Surfing,M,53,N,White shark,1
+220,2013,Unprovoked,AUSTRALIA,Diving,M,55,N,White shark,1
+221,2013,Unprovoked,NEW ZEALAND,Swimming,M,46,Y,White shark,1
+222,2013,Unprovoked,USA,Surfing,M,25,N,White shark,1
+223,2013,Unprovoked,USA,Surfing,M,45,N,White shark,1
+224,2013,Boat,AUSTRALIA,Fishing,M,UNKNOWN,N,White shark,1
+225,2013,Unprovoked,SOUTH AFRICA,Surfing,M,19,N,White shark,1
+226,2013,Boat,USA,Fishing,M,UNKNOWN,N,White shark,1
+227,2013,Unprovoked,SOUTH AFRICA,Swimming,M,74,Y,White shark,1
+228,2013,Unprovoked,USA,Surfing,F,UNKNOWN,N,White shark,1
+229,2014,Provoked,USA,Swimming,M,UNKNOWN,N,White shark,1
+230,2014,Boat,SOUTH AFRICA,Shark watching,UNKNOWN,UNKNOWN,N,White shark,1
+231,2014,Unprovoked,AUSTRALIA,Spearfishing,M,17,Y,White shark,1
+232,2014,Unprovoked,AUSTRALIA,Surfing,M,35,N,White shark,1
+233,2014,Boat,USA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+234,2014,Boat,USA,Kayaking,M,UNKNOWN,N,White shark,1
+235,2014,Boat,NEW ZEALAND,Filming a documentary,UNKNOWN,UNKNOWN,N,White shark,1
+236,2014,Unprovoked,SOUTH AFRICA,Surfing,M,20,N,White shark,1
+237,2014,Boat,USA,Kayaking,M,UNKNOWN,N,White shark,1
+238,2014,Unprovoked,USA,Surfing,M,50,N,White shark,1
+239,2014,Boat,AUSTRALIA,Fishing,M,UNKNOWN,N,White shark,1
+240,2014,Boat,USA,Kayaking,F,20s,N,White shark,1
+241,2015,Boat,USA,Fishing,M,UNKNOWN,N,White shark,1
+242,2015,Unprovoked,SOUTH AFRICA,Surfing,M,34,N,White shark,1
+243,2015,Unprovoked,USA,Surfing,M,38,N,White shark,1
+244,2015,Unprovoked,AUSTRALIA,Body boarding,M,32,N,White shark,1
+245,2015,Unprovoked,AUSTRALIA,Surfing,M,52,N,White shark,1
+246,2015,Unprovoked,AUSTRALIA,Surfing,M,UNKNOWN,N,White shark,1
+247,2015,Unprovoked,AUSTRALIA,Surf-skiing,M,71,N,White shark,1
+248,2015,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+249,2015,Unprovoked,SOUTH AFRICA,Surfing,M,42,N,White shark,1
+250,2015,Boat,USA,Fishing,M,22,N,White shark,1
+251,2015,Boat,SOUTH AFRICA,Fishing,M,36,N,White shark,1
+252,2015,Boat,USA,Fishing,M,UNKNOWN,N,White shark,1
+253,2015,Boat,SOUTH AFRICA,Fishing,M,UNKNOWN,N,White shark,1
+254,2015,Unprovoked,USA,Stand-Up Paddleboarding,F,50,N,White shark,1
+255,2015,Unprovoked,SOUTH AFRICA,Surfing,M,23,N,White shark,1
+256,2015,Unprovoked,AUSTRALIA,Surf-skiing,M,62,N,White shark,1
+257,2015,Unprovoked,USA,Surfing,F,54,N,White shark,1
+258,2015,Unprovoked,SOUTH AFRICA,Body Boarding,M,19,N,White shark,1
+259,2015,Unprovoked,SOUTH AFRICA,Diving,M,29,N,White shark,1
+260,2015,Unprovoked,AUSTRALIA,Surfing,M,26,N,White shark,1
+261,2015,Invalid,AUSTRALIA,Surfing,F,37,N,White shark,1
+262,2015,Unprovoked,USA,Surfing,M,21,N,White shark,1
+263,2015,Boat,ATLANTIC OCEAN,Rowing,UNKNOWN,UNKNOWN,N,White shark,1
+264,2015,Unprovoked,AUSTRALIA,Diving,M,46,Y,White shark,1
+265,2015,Unprovoked,AUSTRALIA,Surfing,M,52,N,White shark,1
+266,2016,Unprovoked,SOUTH AFRICA,Surf-skiing,M,55,N,White shark,1
+267,2016,Unprovoked,SOUTH AFRICA,Surf-skiing,M,UNKNOWN,N,White shark,1
+268,2016,Invalid,MEXICO,Cage Diving,M,UNKNOWN,UNKNOWN,White shark,1
+269,2016,Unprovoked,USA,Spearfishing,M,22,N,White shark,1
+270,2016,Unprovoked,SOUTH AFRICA,Spearfishing,M,43,N,White shark,1
+271,2016,Unprovoked,AUSTRALIA,Surfing,M,17,N,White shark,1
+272,2016,Boat,USA,Fishing,M,UNKNOWN,N,White shark,1
+273,2016,Unprovoked,AUSTRALIA,Surfing,M,65,N,White shark,1
+274,2016,Boat,AUSTRALIA,Kayaking,M,UNKNOWN,N,White shark,1
+275,2016,Boat,USA,Fishing,M,UNKNOWN,N,White shark,1
+276,2016,Unprovoked,USA,Kite surfing,M,61,N,White shark,1
+277,2016,Unprovoked,AUSTRALIA,Surfing,M,29,Y,White shark,1
+278,2017,Unprovoked,AUSTRALIA,Fishing,F,15,N,White shark,1
+279,2017,Boat,AUSTRALIA,Fishing,UNKNOWN,UNKNOWN,N,White shark,1
+280,2017,Unprovoked,AUSTRALIA,Surfing,M,37,N,White shark,1
+281,2017,Boat,USA,Kayaking,M,UNKNOWN,N,White shark,1
+282,2017,Unprovoked,USA,Surfing,M,UNKNOWN,N,White shark,1
+283,2017,Unprovoked,AUSTRALIA,Surfing,M,UNKNOWN,N,White shark,1
+284,2017,Unprovoked,AUSTRALIA,Surfing,M,35,N,White shark,1
+285,2017,Boat,USA,Kayaking,M,UNKNOWN,N,White shark,1
+286,2017,Unprovoked,SOUTH AFRICA,Surfing,F,13,N,White shark,1
+287,2017,Boat,USA,Kayaking,M,40,N,White shark,1
+288,2017,Unprovoked,USA,Stand-Up Paddleboarding,M,69,N,White shark,1
+289,2017,Boat,USA,Kayaking,M,UNKNOWN,N,White shark,1
+290,2017,Unprovoked,AUSTRALIA,Body boarding,M,48,N,White shark,1
+291,2017,Unprovoked,AUSTRALIA,Surfing,F,17,Y,White shark,1
+292,2017,Boat,USA,Tagging sharks,UNKNOWN,UNKNOWN,N,White shark,1
+293,2017,Unprovoked,USA,Stand-Up Paddleboarding,M,50,N,White shark,1
+294,2017,Unprovoked,USA,Spearfishing,M,25,N,White shark,1
+295,2018,Unprovoked,AUSTRALIA,Surfing,M,UNKNOWN,N,White shark,1
+296,2018,Unprovoked,SOUTH AFRICA,Surf-skiing,M,33,N,White shark,1
+297,2018,Unprovoked,SOUTH AFRICA,Surfing,M,19,N,White shark,1
+298,2018,Unprovoked,AUSTRALIA,Diving,M,28,N,White shark,1

@@ -103,6 +103,17 @@ function show_activity(ndx) {
         .yAxis().ticks(20);
 }
 
+function show_countrypi(ndx) {
+    var name_dim = ndx.dimension(dc.pluck('Country'));
+    var country_attacks = name_dim.group();
+    
+    dc.pieChart('#country-chart')
+        .height(400)
+        .radius(600)
+        .dimension(name_dim)
+        .group(country_attacks)
+        .transitionDuration(1500)
+}
 
 function show_years(ndx) {
     var date_dim = ndx.dimension(dc.pluck('Year'));
@@ -122,56 +133,61 @@ function show_years(ndx) {
         .yAxis().ticks(4);
 }
 
-
-function show_countrypi(ndx) {
-    var name_dim = ndx.dimension(dc.pluck('Country'));
-    var country_attacks = name_dim.group();
-    
-    dc.pieChart('#country-chart')
-        .height(400)
-        .radius(600)
-        .dimension(name_dim)
-        .group(country_attacks)
-        .transitionDuration(1500)
-}
-
 function show_country_year(ndx) {
         var date_dim = ndx.dimension(dc.pluck('Year'));
-        var minDate = date_dim.bottom(1)[0].Year;
-        var maxDate = date_dim.top(1)[0].Year;
-        function attack_by_country(Country) {
+       
+        
+            function attacks_by_country(Country) {
             return function(d) {
                 if (d.Country === Country) {
-                    return +d.Country;
+                    return +d.Number;
                 } else {
                     return 0;
                 }
             }
         }
-        var SouthAfricaByYear = date_dim.group().reduceSum(attack_by_country('SOUTH AFRICA'));
-        var UsaByYear = date_dim.group().reduceSum(attack_by_country('USA'));
-        var AustraliaByYear = date_dim.group().reduceSum(attack_by_country('AUSTRALIA'));
         
-		var compositeChart = dc.compositeChart('#composite-chart');
+        var SouthAfricaAttacksByYear = date_dim.group().reduceSum(attacks_by_country('SOUTH AFRICA'));
+        
+        var UsaAttacksByYear = date_dim.group().reduceSum(attacks_by_country('USA'));
+        
+        var AustraliaAttacksByYear = date_dim.group().reduceSum(attacks_by_country('AUSTRALIA'));
+        
+        var NewZealandAttacksByYear = date_dim.group().reduceSum(attacks_by_country('NEW ZEALAND'));
+        
+        var ItalyAttacksByYear = date_dim.group().reduceSum(attacks_by_country('ITALY'));
+        
+        var compositeChart = dc.compositeChart('#composite-chart');
+		
         compositeChart
-            .width(990)
-            .height(200)
+            .width(1700)
+            .height(300)
             .dimension(date_dim)
-            .x(d3.time.scale().domain([minDate, maxDate]))
-            .yAxisLabel("Year")
+            .x(d3.scale.linear().domain([1968, 2018]))
+            
+            .xAxisLabel("Year")
+            .yAxisLabel("Attacks")
             .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
             .renderHorizontalGridLines(true)
             .compose([
+                 dc.lineChart(compositeChart)
+                    .colors('red')
+                    .group(UsaAttacksByYear, 'USA'),
                 dc.lineChart(compositeChart)
                     .colors('green')
-                    .group(SouthAfricaByYear, 'SOUTH AFRICA'),
+                    .group(SouthAfricaAttacksByYear, 'SOUTH AFRICA'),
                 dc.lineChart(compositeChart)
-                    .colors('red')
-                    .group(UsaByYear, 'USA'),
+                    .colors('gold')
+                    .group(AustraliaAttacksByYear, 'AUSTRALIA'),
+                dc.lineChart(compositeChart)
+                    .colors('black')
+                    .group(NewZealandAttacksByYear, 'NEW ZEALAND'),
                 dc.lineChart(compositeChart)
                     .colors('blue')
-                    .group(AustraliaByYear, 'AUSTRALIA')
+                    .group(ItalyAttacksByYear, 'ITALY')    
             ])
             .brushOn(false)
             .render();
+            
     }
+    
