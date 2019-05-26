@@ -44,7 +44,7 @@ function writeToDocument(url) {
         }
         data = data.records;
         
-        var tableHeaders = getTableHeaders(data[0]);
+        var tableHeaders = getTableHeaders(data[0].fields);
 
         data.forEach(function(item) {
             var dataRow = [];

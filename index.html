@@ -23,36 +23,31 @@
 <body>
 
     <h1>Global White Shark Attacks</h1>
-    <button onclick="writeToDocument('https://data.opendatasoft.com/api/records/1.0/search/?dataset=global-shark-attack%40public-us&facet=date')">Date</button>
-    <button onclick="writeToDocument('https://data.opendatasoft.com/api/records/1.0/search/?dataset=global-shark-attack%40public-us&facet=type')">Type</button>
-    <button onclick="writeToDocument('https://data.opendatasoft.com/api/records/1.0/search/?dataset=global-shark-attack%40public-us&facet=country')">Country</button>
-    <button onclick="writeToDocument('https://data.opendatasoft.com/api/records/1.0/search/?dataset=global-shark-attack%40public-us&facet=activity')">Activity</button>
-    <button onclick="writeToDocument('https://data.opendatasoft.com/api/records/1.0/search/?dataset=global-shark-attack%40public-us&facet=sex')">Sex</button>
-    <button onclick="writeToDocument('https://data.opendatasoft.com/api/records/1.0/search/?dataset=global-shark-attack%40public-us&facet=fatal_y_n')">Fatal</button>
-    <button onclick="writeToDocument('https://data.opendatasoft.com/api/records/1.0/search/?dataset=global-shark-attack%40public-us&facet=species')">Species</button>
+    <button onclick="writeToDocument('https://data.opendatasoft.com/api/records/1.0/search/?dataset=global-shark-attack%40public-us&facet=date&facet=type&facet=country&facet=activity&facet=sex&facet=age&facet=fatal_y_n&facet=time&facet=species&refine.species=White+shark')">Table</button>
+   
     <div id="data"></div>
 
     <div id="country-chart"></div>
-    
+
     <div id="country-selector"></div>
-    
+
     <div id="composite-chart"></div>
-    
-    <div id="chart-here"></div>
-    
-     <div id="activity-selector"></div>
+
+    <div id="activity-selector"></div>
 
     <div id="activity"></div>
-    
+
+    <div id="chart-here"></div>
+
     <div id="type-selector"></div>
 
     <div id="fifty-years"></div>
 
     <div id="country"></div>
 
-   
-    
-    
+
+
+
 </body>
 
 </html>
