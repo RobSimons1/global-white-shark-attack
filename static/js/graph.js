@@ -267,6 +267,7 @@ function show_country_year(ndx) {
 
 
             dc.lineChart(compositeChart)
+            .dashStyle([3,2])
             .colors('pink')
             .group(TotalAttacksByYear, 'TOTAL')
         ])
