@@ -141,6 +141,7 @@ function show_country_year(ndx) {
             return function(d) {
                 if (d.Country === Country) {
                     return +d.Number;
+                // Number column added to .CSV file in order that function multiplies count by a numerical value (e.g. 1)    
                 } else {
                     return 0;
                 }
@@ -157,11 +158,13 @@ function show_country_year(ndx) {
         
         var ItalyAttacksByYear = date_dim.group().reduceSum(attacks_by_country('ITALY'));
         
+        var TotalAttacksByYear = date_dim.group();
+        
         var compositeChart = dc.compositeChart('#composite-chart');
 		
         compositeChart
             .width(1700)
-            .height(300)
+            .height(500)
             .dimension(date_dim)
             .x(d3.scale.linear().domain([1968, 2018]))
             
@@ -184,7 +187,11 @@ function show_country_year(ndx) {
                     .group(NewZealandAttacksByYear, 'NEW ZEALAND'),
                 dc.lineChart(compositeChart)
                     .colors('blue')
-                    .group(ItalyAttacksByYear, 'ITALY')    
+                    .group(ItalyAttacksByYear, 'ITALY'),   
+                    
+                dc.lineChart(compositeChart)
+                    .colors('pink')
+                    .group(TotalAttacksByYear, 'RUNNING MEAN')      
             ])
             .brushOn(false)
             .render();
