@@ -22,7 +22,7 @@ function makeGraphs(error, sharkData) {
     show_country_year(ndx);
 
 
-
+    
 
     dc.renderAll();
 
@@ -266,19 +266,19 @@ function show_data_table(ndx) {
 
     var dim = ndx.dimension(function(d) { return d.dim; });
 
-    var table = dc.dataTable("#dc-data-table")
+    var table = dc.dataTable("#dc-data-table") // variable created for pagination
 
         .dimension(dim)
         .group(function(d) { return ""; })
         .size(Infinity) // Adjust amount of rows here. Use 'Infinity' to show all data
-
+        
         .columns([
             function(d) { return d.Year; },
             function(d) { return d.Type; },
             function(d) { return d.Country; },
+            function(d) { return d.Activity; },
             function(d) { return d.Sex; },
             function(d) { return d.Age; },
-            function(d) { return d.Activity; },
             function(d) { return d.Fatal; },
             function(d) { return d.Species; }
 
@@ -286,7 +286,7 @@ function show_data_table(ndx) {
         ]).sortBy(function(d) {
             return d.Year; // sortBy return = d.Year will sort data by years
         })
-        .order(d3.descending) // reinsert ; after final peice of this code
+        .order(d3.descending) // reinsert ; after final peice of this section
         
     // pagination   
         
@@ -297,15 +297,15 @@ function show_data_table(ndx) {
            
     // use odd page size to show the effect better
     var ofs = 0,
-        pag = 13;
+        pag = 7;
 
     function update_offset() {
         var totFilteredRecs = ndx.groupAll().value();
         var end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
         ofs = ofs >= totFilteredRecs ? Math.floor((totFilteredRecs - 1) / pag) * pag : ofs;
         ofs = ofs < 0 ? 0 : ofs;
-        table.beginSlice(ofs); //dc.dataTable used as variable for table chart
-        table.endSlice(ofs + pag); //dc.dataTable used as variable for table chart
+        table.beginSlice(ofs); //table used as variable for dc.dataTable("#dc-data-table")
+        table.endSlice(ofs + pag); //dc.dataTable used as variable for dc.dataTable("#dc-data-table")
     }
 
     function display() {
@@ -315,7 +315,7 @@ function show_data_table(ndx) {
             .text(end === 0 ? ofs : ofs + 1);
         d3.select('#end')
             .text(end);
-        d3.select('#last')
+        d3.select('#last') // Need to link to p"paging"
             .attr('disabled', ofs - pag < 0 ? 'true' : null);
         d3.select('#next')
             .attr('disabled', ofs + pag >= totFilteredRecs ? 'true' : null);
@@ -331,13 +331,13 @@ function show_data_table(ndx) {
     function next() {
         ofs += pag;
         update_offset();
-        table.redraw(); //dc.dataTable used as variable for table chart
+        table.redraw(); //dc.dataTable used as variable for dc.dataTable("#dc-data-table")
     }
 
     function last() {
         ofs -= pag;
         update_offset();
-        table.redraw(); //dc.dataTable used as variable for table chart
+        table.redraw(); //dc.dataTable used as variable for dc.dataTable("#dc-data-table")
     }
 
 }
