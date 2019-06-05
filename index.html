@@ -11,42 +11,37 @@
     <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="static/css/style.css" type="text/css" />
 
-
-    <script type="text/javascript" src="static/js/d3.min.js"></script>
-    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
-    <script type="text/javascript" src="static/js/dc.min.js"></script>
-    <script type="text/javascript" src="static/js/queue.min.js"></script>
-    <script type="text/javascript" src="static/js/main.js"></script>
-
 </head>
 
 <body>
 
-    <h1>Global White Shark Attacks</h1>
+    <h1>Global White Shark Attacks (1968 - 2018)</h1>
 
-    </div>
-    
-    <div id="paging">
-        Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
-        <input id="last" class="btn" type="Button" value="Last" onclick="javascript:last()" />
-        <input id="next" class="btn" type="button" value="Next" onclick="javascript:next()" />
-    </div>
+    <div class="container">
 
-    <table id="dc-data-table" class="table table-striped">
-        <thead>
-            <tr class="header">
-                <th>Year</th>
-                <th>Type</th>
-                <th>Country</th>
-                <th>Activity</th>
-                <th>Sex</th>
-                <th>Age</th>
-                <th>Fatal (Y/N)</th>
-                <th>Species</th>
-            </tr>
-        </thead>
-    </table>
+        <div class="row">
+            <h3> Table showing descending chronological events over a fifty year period: </h3>
+            <table id="dc-data-table" class="table table-striped">
+                <thead>
+                    <tr class="header">
+                        <th>Year</th>
+                        <th>Type</th>
+                        <th>Country</th>
+                        <th>Activity</th>
+                        <th>Sex</th>
+                        <th>Age</th>
+                        <th>Fatal (Y/N)</th>
+                        <th>Species</th>
+                    </tr>
+                </thead>
+            </table>
+            <div id="paging">
+                Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
+                <input id="last" class="btn" type="Button" value="Last" />
+                <input id="next" class="btn" type="button" value="Next" />
+            </div>
 
+        </div>
     </div>
 
     <div id="country-chart"></div>
@@ -68,6 +63,16 @@
 
 
     <div id="type-selector"></div>
+
+    <!-- Scripts located at the bottom of the body to insure page is fully loaded before execution -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/d3.min.js"></script>
+    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="static/js/dc.min.js"></script>
+    <script type="text/javascript" src="static/js/queue.min.js"></script>
+    
+    <script type="text/javascript" src="static/js/main.js"></script>
+
 
 
 </body>

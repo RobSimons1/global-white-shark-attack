@@ -18,11 +18,8 @@ function makeGraphs(error, sharkData) {
     show_agepi(ndx);
     show_fatal_selector(ndx);
 
-
     show_country_year(ndx);
 
-
-    
 
     dc.renderAll();
 
@@ -271,7 +268,7 @@ function show_data_table(ndx) {
         .dimension(dim)
         .group(function(d) { return ""; })
         .size(Infinity) // Adjust amount of rows here. Use 'Infinity' to show all data
-        
+
         .columns([
             function(d) { return d.Year; },
             function(d) { return d.Type; },
@@ -287,14 +284,14 @@ function show_data_table(ndx) {
             return d.Year; // sortBy return = d.Year will sort data by years
         })
         .order(d3.descending) // reinsert ; after final peice of this section
-        
-    // pagination   
-        
+
+        // pagination   
+
         .on('preRender', update_offset)
         .on('preRedraw', update_offset)
         .on('pretransition', display);
 
-           
+
     // use odd page size to show the effect better
     var ofs = 0,
         pag = 7;
@@ -305,7 +302,7 @@ function show_data_table(ndx) {
         ofs = ofs >= totFilteredRecs ? Math.floor((totFilteredRecs - 1) / pag) * pag : ofs;
         ofs = ofs < 0 ? 0 : ofs;
         table.beginSlice(ofs); //table used as variable for dc.dataTable("#dc-data-table")
-        table.endSlice(ofs + pag); //dc.dataTable used as variable for dc.dataTable("#dc-data-table")
+        table.endSlice(ofs + pag); //table used as variable for dc.dataTable("#dc-data-table")
     }
 
     function display() {
@@ -315,7 +312,7 @@ function show_data_table(ndx) {
             .text(end === 0 ? ofs : ofs + 1);
         d3.select('#end')
             .text(end);
-        d3.select('#last') // Need to link to p"paging"
+        d3.select('#last')
             .attr('disabled', ofs - pag < 0 ? 'true' : null);
         d3.select('#next')
             .attr('disabled', ofs + pag >= totFilteredRecs ? 'true' : null);
@@ -328,16 +325,18 @@ function show_data_table(ndx) {
         }
     }
 
-    function next() {
-        ofs += pag;
+$('#next').on('click', function(){
+ ofs += pag;
         update_offset();
-        table.redraw(); //dc.dataTable used as variable for dc.dataTable("#dc-data-table")
-    }
+        table.redraw();
+})
+// Event Listener function that fires when "next" HTML btn is clicked   
+    
 
-    function last() {
-        ofs -= pag;
+   $('#last').on('click', function(){
+ ofs -= pag;
         update_offset();
-        table.redraw(); //dc.dataTable used as variable for dc.dataTable("#dc-data-table")
-    }
-
+        table.redraw();
+})
+// Event Listener function that fires when "last" HTML btn is clicked
 }
