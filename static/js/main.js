@@ -17,14 +17,10 @@ function makeGraphs(error, sharkData) {
     show_countrypi(ndx);
     show_agepi(ndx);
 
-
-    show_percent_that_are_unprovoked(ndx, "Y", "#percent-attacks-fatal");
-    show_percent_that_are_unprovoked(ndx, "N", "#percent-attacks-non-fatal");
-    
     show_fatal_selector(ndx);
     show_type_selector(ndx);
 
-    show_rank_distribution(ndx);
+    show__type_fatality_distribution(ndx);
 
     show_country_year(ndx);
 
@@ -71,49 +67,9 @@ function show_type_selector(ndx) {
         .group(group);
 }
 
+function show__type_fatality_distribution(ndx) {
 
-function show_percent_that_are_unprovoked(ndx, fatality, element) {
-    var percentageThatAreUnprovoked = ndx.groupAll().reduce(
-        function(p, v) {
-            if (v.Fatal === fatality) {
-                p.count++;
-                if (v.Type === "Unprovoked") {
-                    p.are_unprovoked++;
-                }
-            }
-            return p;
-        },
-        function(p, v) {
-            if (v.Fatal === fatality) {
-                p.count--;
-                if (v.Type === "Unprovoked") {
-                    p.are_unprovoked--;
-                }
-            }
-            return p;
-        },
-        function() {
-            return { count: 0, are_unprovoked: 0 };
-        },
-    );
-
-    dc.numberDisplay(element)
-        .formatNumber(d3.format(".2%"))
-        .valueAccessor(function(d) {
-            if (d.count == 0) {
-                return 0;
-            }
-            else {
-                return (d.are_unprovoked / d.count);
-            }
-        })
-        .group(percentageThatAreUnprovoked);
-
-}
-
-function show_rank_distribution(ndx) {
-
-    function rankByGender(dimension, type) {
+    function typeByFatality(dimension, type) {
         return dimension.group().reduce(
             function(p, v) {
                 p.total++;
@@ -136,20 +92,20 @@ function show_rank_distribution(ndx) {
     }
 
     var dim = ndx.dimension(dc.pluck("Fatal"));
-    var profByGender = rankByGender(dim, "Unprovoked");
-    var asstProfByGender = rankByGender(dim, "Provoked");
-    var assocProfByGender = rankByGender(dim, "Boat");
-    var invalidByGender = rankByGender(dim, "Invalid");
+    var unprovokedByFatality = typeByFatality(dim, "Unprovoked");
+    var provokedByFatality = typeByFatality(dim, "Provoked");
+    var boatByFatality = typeByFatality(dim, "Boat");
+    var invalidByFatality = typeByFatality(dim, "Invalid");
     
 
-    dc.barChart("#rank-distribution")
+    dc.barChart("#type-by-fatality-distribution")
         .width(400)
         .height(300)
         .dimension(dim)
-        .group(profByGender, "Unprovoked")
-        .stack(asstProfByGender, "Provoked")
-        .stack(assocProfByGender, "Boat")
-        .stack(invalidByGender, "Invalid")
+        .group(unprovokedByFatality, "Unprovoked")
+        .stack(provokedByFatality, "Provoked")
+        .stack(boatByFatality, "Boat")
+        .stack(invalidByFatality, "Invalid")
         
         .valueAccessor(function(d) {
             if (d.value.total > 0) {
@@ -161,9 +117,10 @@ function show_rank_distribution(ndx) {
         })
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
-        .xAxisLabel("")
+        .xAxisLabel("Fatality")
+        .yAxisLabel("Attacks")
         .legend(dc.legend().x(320).y(20).itemHeight(15).gap(5))
-        .margins({ top: 10, right: 100, bottom: 30, left: 30 });
+        .margins({ top: 10, right: 100, bottom: 50, left: 50 });
 }
 
 
