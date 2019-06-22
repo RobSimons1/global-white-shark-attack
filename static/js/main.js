@@ -7,7 +7,7 @@ function makeGraphs(error, sharkData) {
 
     show_data_table(ndx);
 
-    show_type_selector(ndx);
+
 
     show_country_selector(ndx);
 
@@ -16,7 +16,15 @@ function makeGraphs(error, sharkData) {
     show_fatalpi(ndx);
     show_countrypi(ndx);
     show_agepi(ndx);
+
+
+    show_percent_that_are_unprovoked(ndx, "Y", "#percent-attacks-fatal");
+    show_percent_that_are_unprovoked(ndx, "N", "#percent-attacks-non-fatal");
+    
     show_fatal_selector(ndx);
+    show_type_selector(ndx);
+
+    show_rank_distribution(ndx);
 
     show_country_year(ndx);
 
@@ -25,14 +33,7 @@ function makeGraphs(error, sharkData) {
 
 }
 
-function show_type_selector(ndx) {
-    var dim = ndx.dimension(dc.pluck('Type'));
-    var group = dim.group();
 
-    dc.selectMenu("#type-selector")
-        .dimension(dim)
-        .group(group);
-}
 
 function show_country_selector(ndx) {
     var dim = ndx.dimension(dc.pluck('Country'));
@@ -61,6 +62,111 @@ function show_fatal_selector(ndx) {
         .group(group);
 }
 
+function show_type_selector(ndx) {
+    var dim = ndx.dimension(dc.pluck('Type'));
+    var group = dim.group();
+
+    dc.selectMenu("#type-selector")
+        .dimension(dim)
+        .group(group);
+}
+
+
+function show_percent_that_are_unprovoked(ndx, fatality, element) {
+    var percentageThatAreUnprovoked = ndx.groupAll().reduce(
+        function(p, v) {
+            if (v.Fatal === fatality) {
+                p.count++;
+                if (v.Type === "Unprovoked") {
+                    p.are_unprovoked++;
+                }
+            }
+            return p;
+        },
+        function(p, v) {
+            if (v.Fatal === fatality) {
+                p.count--;
+                if (v.Type === "Unprovoked") {
+                    p.are_unprovoked--;
+                }
+            }
+            return p;
+        },
+        function() {
+            return { count: 0, are_unprovoked: 0 };
+        },
+    );
+
+    dc.numberDisplay(element)
+        .formatNumber(d3.format(".2%"))
+        .valueAccessor(function(d) {
+            if (d.count == 0) {
+                return 0;
+            }
+            else {
+                return (d.are_unprovoked / d.count);
+            }
+        })
+        .group(percentageThatAreUnprovoked);
+
+}
+
+function show_rank_distribution(ndx) {
+
+    function rankByGender(dimension, type) {
+        return dimension.group().reduce(
+            function(p, v) {
+                p.total++;
+                if (v.Type == type) {
+                    p.match++;
+                }
+                return p;
+            },
+            function(p, v) {
+                p.total--;
+                if (v.Type == type) {
+                    p.match--;
+                }
+                return p;
+            },
+            function() {
+                return { total: 0, match: 0 };
+            }
+        );
+    }
+
+    var dim = ndx.dimension(dc.pluck("Fatal"));
+    var profByGender = rankByGender(dim, "Unprovoked");
+    var asstProfByGender = rankByGender(dim, "Provoked");
+    var assocProfByGender = rankByGender(dim, "Boat");
+    var invalidByGender = rankByGender(dim, "Invalid");
+    
+
+    dc.barChart("#rank-distribution")
+        .width(400)
+        .height(300)
+        .dimension(dim)
+        .group(profByGender, "Unprovoked")
+        .stack(asstProfByGender, "Provoked")
+        .stack(assocProfByGender, "Boat")
+        .stack(invalidByGender, "Invalid")
+        
+        .valueAccessor(function(d) {
+            if (d.value.total > 0) {
+                return (d.value.match);
+            }
+            else {
+                return 0;
+            }
+        })
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .xAxisLabel("")
+        .legend(dc.legend().x(320).y(20).itemHeight(15).gap(5))
+        .margins({ top: 10, right: 100, bottom: 30, left: 30 });
+}
+
+
 function show_activity(ndx) {
     var dim = ndx.dimension(dc.pluck('Activity'));
     var group = dim.group();
@@ -88,7 +194,7 @@ function show_countrypi(ndx) {
         .radius(600)
         .dimension(name_dim)
         .group(country_attacks)
-        .transitionDuration(1500)
+        .transitionDuration(1500);
 }
 
 function show_agepi(ndx) {
@@ -100,7 +206,7 @@ function show_agepi(ndx) {
         .radius(600)
         .dimension(name_dim)
         .group(country_attacks)
-        .transitionDuration(1500)
+        .transitionDuration(1500);
 }
 
 function show_fatalpi(ndx) {
@@ -112,7 +218,7 @@ function show_fatalpi(ndx) {
         .radius(600)
         .dimension(name_dim)
         .group(country_attacks)
-        .transitionDuration(1500)
+        .transitionDuration(1500);
 }
 
 function show_country_year(ndx) {
@@ -128,7 +234,7 @@ function show_country_year(ndx) {
             else {
                 return 0;
             }
-        }
+        };
     }
 
     var SouthAfricaAttacksByYear = date_dim.group().reduceSum(attacks_by_country('SOUTH AFRICA'));
@@ -325,18 +431,18 @@ function show_data_table(ndx) {
         }
     }
 
-$('#next').on('click', function(){
- ofs += pag;
+    $('#next').on('click', function() {
+        ofs += pag;
         update_offset();
         table.redraw();
-})
-// Event Listener function that fires when "next" HTML btn is clicked   
-    
+    });
+    // Event Listener function that fires when "next" HTML btn is clicked   
 
-   $('#last').on('click', function(){
- ofs -= pag;
+
+    $('#last').on('click', function() {
+        ofs -= pag;
         update_offset();
         table.redraw();
-})
-// Event Listener function that fires when "last" HTML btn is clicked
+    });
+    // Event Listener function that fires when "last" HTML btn is clicked
 }

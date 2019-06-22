@@ -13,3 +13,15 @@
     transform: rotate(-45deg);
 }
 
+.number-box {
+    margin-right: 75px;
+}
+
+.number-box, .fa.fa-fatality {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.fa-fatality {
+	margin-right: 10px;
+}
