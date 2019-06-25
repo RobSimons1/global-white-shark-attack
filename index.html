@@ -15,22 +15,36 @@
 </head>
 
 <body>
-    <div class="container">
-        
-        <div class="row">
-            <h1>Global White Shark Attacks (1968 - 2018)</h1>
-        </div>
-        
-         <div class="row">
-         <div>
-             <h3> Type of attacks that have resulted in fatality: </h3>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Global White Shark Attacks Data Dashboard</a>
+                <div id="refresh-button" button type="submit" class="btn btn-success" onClick="refreshPage()">Refresh Charts</button>
                 
-            <div id="type-by-fatality-distribution" class="custom-chart"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row bg-shark-wave">
+        <div class="col-xs-12 col-sm-12">
+            <h1>Global White Shark Attacks (1968 - 2018)</h1>
+            <div id="country-chart"></div>
             <div id="fatal-selector"></div>
             <div id="type-selector"></div>
         </div>
+    </div>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div id="country-selector"></div>
+            <div id="composite-chart"></div>
         </div>
-        
+
+
         <div class="row">
             <h4> Table showing descending chronological events over a fifty year period: </h4>
             <table id="dc-data-table" class="table table-striped">
@@ -56,26 +70,31 @@
         </div>
 
         <div class="row">
-            <div id="country-chart"></div>
+            <div>
+                <h3> Type of attacks that have resulted in fatality: </h3>
 
-            
+                <div id="type-by-fatality-distribution" class="custom-chart"></div>
 
-            <div id="age-chart"></div>
+                <div id="age-chart"></div>
 
-            <div id="fatal-chart"></div>
+                <div id="fatal-chart"></div>
+
+            </div>
         </div>
 
         <div class="row">
-            <div id="country-selector"></div>
-            <div id="composite-chart"></div>
+
+
         </div>
 
-        
+
+
+
 
         <div class="row">
             <div id="activity-selector"></div>
             <div id="activity"></div>
-            
+
         </div>
 
     </div>

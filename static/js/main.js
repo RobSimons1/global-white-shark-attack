@@ -1,3 +1,7 @@
+function addition() {
+    return 42;
+}
+
 queue()
     .defer(d3.csv, "data/shark-attack-data.csv")
     .await(makeGraphs);
@@ -96,20 +100,20 @@ function show__type_fatality_distribution(ndx) {
     var provokedByFatality = typeByFatality(dim, "Provoked");
     var boatByFatality = typeByFatality(dim, "Boat");
     var invalidByFatality = typeByFatality(dim, "Invalid");
-    
+
 
     dc.barChart("#type-by-fatality-distribution")
-        .width(400)
-        .height(300)
+        .width(500)
+        .height(500)
         .dimension(dim)
         .group(unprovokedByFatality, "Unprovoked")
         .stack(provokedByFatality, "Provoked")
         .stack(boatByFatality, "Boat")
         .stack(invalidByFatality, "Invalid")
-        
+
         .valueAccessor(function(d) {
             if (d.value.total > 0) {
-                return (d.value.match);
+                return (d.value.match); // To show as percentages: (d.value.match / d.value.total) * 100;
             }
             else {
                 return 0;
@@ -123,13 +127,12 @@ function show__type_fatality_distribution(ndx) {
         .margins({ top: 10, right: 100, bottom: 50, left: 50 });
 }
 
-
 function show_activity(ndx) {
     var dim = ndx.dimension(dc.pluck('Activity'));
     var group = dim.group();
 
     dc.barChart("#activity")
-        .width(1700)
+        .width(1200)
         .height(300)
         .margins({ top: 10, right: 50, bottom: 90, left: 50 })
         .dimension(dim)
@@ -239,7 +242,7 @@ function show_country_year(ndx) {
     var compositeChart = dc.compositeChart('#composite-chart');
 
     compositeChart
-        .width(1700)
+        .width(1200)
         .height(500)
         .dimension(date_dim)
         .x(d3.scale.linear().domain([1968, 2018]))
@@ -403,3 +406,7 @@ function show_data_table(ndx) {
     });
     // Event Listener function that fires when "last" HTML btn is clicked
 }
+
+function refreshPage(){
+    window.location.reload();
+} 

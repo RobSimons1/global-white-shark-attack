@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700|Sirin Stencil:100,200,300,400,500,600,700|Allerta Stencil:100,200,300,400,500,600,700|Audiowide:100,200,300,400,500,600,700|Righteous:100,200,300,400,500,600,700|Jacques Francois Shadow:100,200,300,400,500,600,700|Fredericka the Great:100,200,300,400,500,600,700');
+
 #fifty-years .x.axis text {
     text-anchor: end !important;
     transform: rotate(-45deg);
@@ -13,15 +15,21 @@
     transform: rotate(-45deg);
 }
 
-.number-box {
-    margin-right: 75px;
+.bg-shark-wave {
+    background-image: url('/images/shark-in-a-wave-with-surfer1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-position: center;
 }
 
-.number-box, .fa.fa-fatality {
-    font-size: 30px;
-    font-weight: 500;
+h1 {
+    font-family: 'Sirin Stencil', cursive;
+    padding-bottom: 50px;
+    color:#00A6D0;
+    font-size: 100px;
 }
 
-.fa-fatality {
-	margin-right: 10px;
+#refresh-button {
+    margin-top: 5px;
+    
 }
