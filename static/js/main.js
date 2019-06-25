@@ -133,7 +133,7 @@ function show_activity(ndx) {
 
     dc.barChart("#activity")
         .width(1200)
-        .height(300)
+        .height(500)
         .margins({ top: 10, right: 50, bottom: 90, left: 50 })
         .dimension(dim)
         .group(group)
@@ -152,6 +152,7 @@ function show_countrypi(ndx) {
     dc.pieChart('#country-chart')
         .height(400)
         .radius(600)
+        .innerRadius(100)
         .dimension(name_dim)
         .group(country_attacks)
         .transitionDuration(1500);
@@ -164,6 +165,7 @@ function show_agepi(ndx) {
     dc.pieChart('#age-chart')
         .height(400)
         .radius(600)
+        .innerRadius(70)
         .dimension(name_dim)
         .group(country_attacks)
         .transitionDuration(1500);
@@ -176,6 +178,7 @@ function show_fatalpi(ndx) {
     dc.pieChart('#fatal-chart')
         .height(400)
         .radius(600)
+        .innerRadius(70)
         .dimension(name_dim)
         .group(country_attacks)
         .transitionDuration(1500);
