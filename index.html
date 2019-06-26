@@ -21,9 +21,9 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">Global White Shark Attacks Data Dashboard</a>
                 <div id="refresh-button" button type="submit" class="btn btn-success" onClick="refreshPage()">Refresh Charts</button>
-
                 </div>
             </div>
+            <p class="navbar-section-paragraph">Hover or Click on Graphs and Charts to select data for analysis </p>
         </div>
     </nav>
 
@@ -34,30 +34,31 @@
                 <div class="row bg-shark-wave">
                     <div class="col-xs-12 col-sm-12">
                         <h1>Global White Shark Attacks (1968 - 2018)</h1>
-                        <div class="col-xs-12 col-sm-4 text-center">
+                    </div>
 
-                            <p class="section-paragraph">Select a Country from the Pie Chart:</p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-sm-4">
+                        <p class="section-paragraph">Select a Country from the Selector or Pie Chart:</p>
+                        <div id="country-selector"></div>
+                        <div id="country-chart"></div>
+                    </div>
 
-                            <p class="section-paragraph">Fatal Selector (displays count of fatalities): </p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-
-                            <p class="section-paragraph">Incident Type Selector: </p>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-4" id="country-chart"></div>
-
-                        <div class="col-xs-12 col-sm-4" id="fatal-selector"></div>
-                        <div class="col-xs-12 col-sm-4" id="type-selector"></div>
-                        <div class="col-xs-12 col-sm-4" id="intro-paragraph">
-                            <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                    <div class="col-xs-12 col-sm-4 text-centre">
+                        <p class="section-paragraph">Fatal Selector (displays count of fatalities): </p>
+                        <div id="fatal-selector"></div>
+                        <div id="intro-paragraph">
+                            <p class="section-paragraph"><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
                                 lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
                                 dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum
                             </p>
+                            </br>
                         </div>
                     </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <p class="section-paragraph">Incident Type Selector: </p>
+                        <div id="type-selector"></div>
+                    </div>
+                </div>
         </section>
 
         <section class="section">
@@ -66,7 +67,6 @@
                     <div class="col-xs-12 col-sm-12">
                         <h3> Composite Chart showing number of White Shark attacks over fifty year period in various countries: </h3>
                         <p class="section-paragraph">Select individual country to show data or hover on graph</p>
-                        <div id="country-selector"></div>
                         <div id="composite-chart"></div>
                     </div>
                 </div>
@@ -104,25 +104,24 @@
             <div class="container">
 
                 <div class="row">
+
                     <div class="col-xs-12 col-sm-4 text-center">
                         <h3> Stacked Bar Chart showing type of attacks that were fatal: </h3>
                         <p class="section-paragraph">No 'Provoked' attacks ended in fatality</p>
+                        <div id="type-by-fatality-distribution" class="custom-chart"></div>
                     </div>
+
                     <div class="col-xs-12 col-sm-4 text-center">
                         <h3> Pie Chart showing Ages of victims: </h3>
                         <p class="section-paragraph">The most common age appears to be 29</p>
+                        <div id="age-chart"></div>
                     </div>
+
                     <div class="col-xs-12 col-sm-4 text-center">
-                        <h3> Type of attacks that have resulted in fatality: </h3>
-                        <p class="section-paragraph">Of the 298 recorded incidents only 50 were fatal</p>
+                        <h3> Stacked Bar Chart showing type of attacks that were fatal: </h3>
+                        <p class="section-paragraph">No 'Provoked' attacks ended in fatality</p>
+                        <div id="fatal-chart"></div>
                     </div>
-
-                    <div class="col-xs-12 col-sm-4 text-center" id="type-by-fatality-distribution" class="custom-chart"></div>
-
-                    <div class="col-xs-12 col-sm-4 text-center" id="age-chart"></div>
-
-                    <div class="col-xs-12 col-sm-4 text-center" id="fatal-chart"></div>
-
                 </div>
             </div>
         </section>
@@ -141,10 +140,16 @@
         </section>
     </main>
 
-    <footer class="footer-container-fluid">
-        <div id="footer-details">
-            <div id="footer-refresh-button" button type="submit" class="btn btn-success" onClick="refreshPage()">Refresh Charts</button>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div id="footer-details">
+                
+                <a class="navbar-brand" href="#">Back to Top</a>
+                <div id="footer-refresh-button" button type="submit" class="btn btn-success" onClick="refreshPage()">Refresh Charts</button>
+                </div>
+                <p class="footer-section-paragraph">Hover or Click on Graphs and Charts to select data for analysis </p>
             </div>
+        </div>
     </footer>
 
 

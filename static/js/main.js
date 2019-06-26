@@ -152,7 +152,7 @@ function show_countrypi(ndx) {
     dc.pieChart('#country-chart')
         .height(400)
         .radius(600)
-        .innerRadius(100)
+        .innerRadius(70)
         .dimension(name_dim)
         .group(country_attacks)
         .transitionDuration(1500);

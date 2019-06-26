@@ -35,10 +35,10 @@ h1 {
 }
 
 #footer-refresh-button {
-  margin-top: 5px; 
-  margin-bottom: 5px;
-  margin-right: 0px;
-  margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    margin-left: 5px;
 }
 
 .section {
@@ -63,9 +63,27 @@ h1 {
     opacity: 0.5;
 }
 
-.footer-container-fluid {
+#country-selector {
+    opacity: 0.5;
+}
+
+.footer {
     background-color: #2C3E50;
-    padding-left: 0px; 
-    padding-right: 0px; 
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0px;
+}
+
+.navbar-section-paragraph {
+    color: #FFFFFF;
+    float: right;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.footer-section-paragraph {
+    color: #FFFFFF;
+    float: right;
+    font-weight: bolder;
+    margin-top: 20px;
 }
