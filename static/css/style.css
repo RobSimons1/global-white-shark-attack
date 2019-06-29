@@ -87,3 +87,21 @@ h1 {
     font-weight: bolder;
     margin-top: 20px;
 }
+
+#age-chart {
+    margin-left: 50px;
+}
+
+#fatal-chart {
+    margin-left: 50px;
+}
+
+/*------------------------------------Media queries*/
+
+@media(min-width:320px) and (max-width:640px) {
+
+    .bg-shark-wave {
+        display: none;
+    }
+
+}
