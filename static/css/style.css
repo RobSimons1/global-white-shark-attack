@@ -25,7 +25,8 @@
 h1 {
     font-family: 'Allerta Stencil', cursive;
     padding-bottom: 50px;
-    color: #09578F;
+    font-weight: lighter;
+    color: #CACACA;
     font-size: 100px;
 }
 
@@ -47,25 +48,9 @@ h1 {
 }
 
 .section-paragraph {
-    color: #00A6D0;
     line-height: 2.0;
 }
 
-#country-chart {
-    opacity: 0.7;
-}
-
-#fatal-selector {
-    opacity: 0.5;
-}
-
-#type-selector {
-    opacity: 0.5;
-}
-
-#country-selector {
-    opacity: 0.5;
-}
 
 .footer {
     background-color: #2C3E50;
@@ -77,8 +62,10 @@ h1 {
 .navbar-section-paragraph {
     color: #FFFFFF;
     float: right;
+    
     font-weight: bolder;
     margin-top: 20px;
+    
 }
 
 .footer-section-paragraph {
@@ -124,25 +111,38 @@ h1 {
     #dc-data-table {
         display: none;
     }
-    
+
     #paging {
         display: none;
     }
-    
+
     h4 {
         display: none;
     }
-    
+
+    #activity-selector {
+        display: none;
+    }
+
     #age-chart {
-    margin-left: 0px;
+        margin-left: 0px;
+    }
+
+    #fatal-chart {
+        margin-left: 0px;
+    }
+
+
+    #country-chart {
+        margin-left: -15px;
+    }
+
 }
 
-#fatal-chart {
-    margin-left: 0px;
-}
-
-#country-chart {
-    margin-left: -15px;
-}
-
+@media(min-width:768px) and (max-width:1023px) {
+    
+ #second-paragraph {
+        display: none;
+    }   
+    
 }
