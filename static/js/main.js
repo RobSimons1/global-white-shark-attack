@@ -105,6 +105,7 @@ function show__type_fatality_distribution(ndx) {
     dc.barChart("#type-by-fatality-distribution")
         .width(500)
         .height(500)
+        .useViewBoxResizing(true)
         .dimension(dim)
         .group(unprovokedByFatality, "Unprovoked")
         .stack(provokedByFatality, "Provoked")
@@ -134,6 +135,7 @@ function show_activity(ndx) {
     dc.barChart("#activity")
         .width(1200)
         .height(500)
+        .useViewBoxResizing(true)
         .margins({ top: 10, right: 50, bottom: 90, left: 50 })
         .dimension(dim)
         .group(group)
@@ -247,6 +249,7 @@ function show_country_year(ndx) {
     compositeChart
         .width(1200)
         .height(500)
+        .useViewBoxResizing(true)
         .dimension(date_dim)
         .x(d3.scale.linear().domain([1968, 2018]))
         .xUnits(dc.units.linear)
@@ -337,7 +340,7 @@ function show_data_table(ndx) {
         .dimension(dim)
         .group(function(d) { return ""; })
         .size(Infinity) // Adjust amount of rows here. Use 'Infinity' to show all data
-
+        
         .columns([
             function(d) { return d.Year; },
             function(d) { return d.Type; },
@@ -347,7 +350,6 @@ function show_data_table(ndx) {
             function(d) { return d.Age; },
             function(d) { return d.Fatal; },
             function(d) { return d.Species; }
-
 
         ]).sortBy(function(d) {
             return d.Year; // sortBy return = d.Year will sort data by years
@@ -408,8 +410,10 @@ function show_data_table(ndx) {
         table.redraw();
     });
     // Event Listener function that fires when "last" HTML btn is clicked
+    
 }
 
 function refreshPage(){
     window.location.reload();
 } 
+

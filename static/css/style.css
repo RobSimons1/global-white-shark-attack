@@ -89,12 +89,29 @@ h1 {
 }
 
 #age-chart {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 #fatal-chart {
-    margin-left: 50px;
+    margin-left: 20px;
 }
+
+#composite-chart {
+    height: 100%;
+    width: 100%;
+
+}
+
+#activity {
+    height: 100%;
+    width: 100%;
+}
+
+#type-by-fatality-distribution {
+    height: 100%;
+    width: 100%;
+}
+
 
 /*------------------------------------Media queries*/
 
@@ -103,5 +120,29 @@ h1 {
     .bg-shark-wave {
         display: none;
     }
+
+    #dc-data-table {
+        display: none;
+    }
+    
+    #paging {
+        display: none;
+    }
+    
+    h4 {
+        display: none;
+    }
+    
+    #age-chart {
+    margin-left: 0px;
+}
+
+#fatal-chart {
+    margin-left: 0px;
+}
+
+#country-chart {
+    margin-left: -15px;
+}
 
 }
