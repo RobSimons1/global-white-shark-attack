@@ -162,9 +162,19 @@ function show_countrypi(ndx) {
 
 function show_agepi(ndx) {
     var name_dim = ndx.dimension(dc.pluck('Age'));
-    var country_attacks = name_dim.group();
-
-    dc.pieChart('#age-chart')
+    var country_attacks = name_dim.group(function(v) {
+        if (v < 15) return "12-14";
+        else if (v < 20) return "15-19";
+        else if (v < 30) return "20-29";
+        else if (v < 40) return "30-39";
+        else if (v < 50) return "40-49";
+        else if (v < 60) return "50-59";
+        else if (v < 70) return "60-69";
+        else if (v < 75) return "70-74";
+        else if (v === "UNKNOWN") return "Unknown";
+    });
+   // Not working when Age Pie Chart is clicked     
+        dc.pieChart('#age-chart')
         .height(400)
         .radius(600)
         .innerRadius(70)
@@ -172,6 +182,9 @@ function show_agepi(ndx) {
         .group(country_attacks)
         .transitionDuration(1500);
 }
+
+    
+
 
 function show_fatalpi(ndx) {
     var name_dim = ndx.dimension(dc.pluck('Fatal'));
@@ -340,7 +353,7 @@ function show_data_table(ndx) {
         .dimension(dim)
         .group(function(d) { return ""; })
         .size(Infinity) // Adjust amount of rows here. Use 'Infinity' to show all data
-        
+
         .columns([
             function(d) { return d.Year; },
             function(d) { return d.Type; },
@@ -410,10 +423,9 @@ function show_data_table(ndx) {
         table.redraw();
     });
     // Event Listener function that fires when "last" HTML btn is clicked
-    
+
 }
 
-function refreshPage(){
+function refreshPage() {
     window.location.reload();
-} 
-
+}
