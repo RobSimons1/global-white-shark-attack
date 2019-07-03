@@ -1,7 +1,7 @@
-function addition() {
-    return 42;
-}
-
+/*global queue*/
+/*global crossfilter*/
+/*global dc*/
+/*global d3*/
 queue()
     .defer(d3.csv, "data/shark-attack-data.csv")
     .await(makeGraphs);
@@ -27,7 +27,6 @@ function makeGraphs(error, sharkData) {
     show__type_fatality_distribution(ndx);
 
     show_country_year(ndx);
-
 
     dc.renderAll();
 
@@ -136,7 +135,7 @@ function show_activity(ndx) {
         .width(1200)
         .height(500)
         .useViewBoxResizing(true)
-        .margins({ top: 10, right: 50, bottom: 90, left: 50 })
+        .margins({ top: 10, right: 50, bottom: 115, left: 50 })
         .dimension(dim)
         .group(group)
         .transitionDuration(500)
