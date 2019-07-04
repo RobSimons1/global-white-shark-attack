@@ -1,9 +1,18 @@
 # Global White Shark Dashboard 
 
+This data dashboard is designed to show the various types of attacks on humans by White Sharks globally over the a fifty year period between 1968 to 2018.
+Some of these attacks have resulted in fatality with the largest number of attacks during this period occuring in the USA and involvolving Surfers. 
+
+The dashboard is easy to use and interactive. The interactivity allows the user to drill down on a selection of sychronised pie and composite charts, 
+stacked bar chart, table and bar graphs to obtain such details as year, type, country, fatality, sex and age of the victim. The data was obtained from 
+"https://data.opendatasoft.com/explore/dataset/global-shark-attack", whish is a robust and API driven data website.
 
 [https://robsimons1.github.io/global-white-shark-attack-dashboard/]
 
 ## UX
+
+The original concept for the dashboard page can be seen in the *suppoting_docs folder* under *wireframe1_global_white_shark_attacks.png* (original idea) and 
+*wireframe1_global_white_shark_attacks.png*, which is the latest idea for the structure of the dashboard.
 
 ## Features
 
@@ -16,9 +25,9 @@
 ### Features left to implement
 
 ## Technologies Used
-The languages, frameworks, libraries and other tools utilised for building this website are:
+The languages, frameworks, libraries and other tools utilised for building this data dashboard are:
 
-*	**HTML 5 -** The website uses HTML5 as a fundamental basis for building the website.
+*	**HTML 5 -** The dashboard uses HTML5 as a fundamental basis for building the website.
 
 *	**CSS3 -** The website uses CSS3 for styling of all elements within the website. It is linked from the each page to the *style.css* file and is used for all content, including such as layout of color and background, images, video, audio etc.
 
@@ -88,8 +97,17 @@ This README file is based on the Code Institute template.
 
 ### Media 
 
-All media files used were created and developed by The Sixth Row for the design of the project.
+Shark and Surfer Image: https://usatunofficial.files.wordpress.com/2011/10/shark-in-a-wave-with-surfer.jpg
+
+Data obtained from: https://data.opendatasoft.com/explore/dataset/global-shark-attack%40public-us/export/
+
+Global Shark Attack: https://data.opendatasoft.com/explore/dataset/global-shark-attack%40public-us/table/
+
+Dataset: global-shark-attack@public-us; http://www.sharkattackfile.net/incidentlog.htm
+
+Opening Paragrapg Ref: https://www.cbsnews.com/pictures/five-most-dangerous-sharks-to-humans/
 
 ### Acknowledgments
 
-Thank you to my fellow band members of The Sith Row for making this an enjoyable project that I felt passionately about. I would like to thank Anthony Ngene (https://github.com/tonymontaro) for his invaluable feedback, as supervisor for this project. 
+Thank you to the Carcharodon Carcharias (White Shark) species whom I find so intriguing and awesome and the people at sharkattackfile.net for compiling such a 
+huge and detailed dataset. I would like to thank Anthony Ngene (https://github.com/tonymontaro) for his invaluable feedback, as supervisor for this project. 
