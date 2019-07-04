@@ -1,4 +1,4 @@
-// /*global varname*/ added to remove undeined variable erors 
+// /*global varname*/ added to remove undeined variable errors 
 /*global queue*/
 /*global crossfilter*/
 /*global dc*/
@@ -30,8 +30,6 @@ function makeGraphs(error, sharkData) {
     dc.renderAll();
 
 }
-
-
 
 function show_country_selector(ndx) {
     var dim = ndx.dimension(dc.pluck('Country'));
@@ -172,7 +170,7 @@ function show_agepi(ndx) {
         //else if (v < 75) return "70-74";
         //else if (v === "UNKNOWN") return "Unknown";
     //});
-   // Not working when Age Pie Chart is clicked     
+   // Function is not working with crossfilter when Age Pie Chart is clicked. Instead resorted to adding age range to .csv file.    
         dc.pieChart('#age-chart')
         .height(400)
         .radius(600)
@@ -261,7 +259,7 @@ function show_country_year(ndx) {
         .useViewBoxResizing(true)
         .dimension(date_dim)
         .x(d3.scale.linear().domain([1968, 2018]))
-        .xUnits(dc.units.linear)
+        //.xUnits(dc.units.linear)
         .xAxisLabel("Year")
         .yAxisLabel("Attacks")
         .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
