@@ -31,7 +31,7 @@ h1 {
 }
 
 span {
- color: #CACACA;   
+    color: #CACACA;
 }
 
 #refresh-button {
@@ -46,6 +46,11 @@ span {
     margin-left: 5px;
 }
 
+#central-refresh-button {
+    margin: auto;
+    display: block;
+}
+
 .section {
     border-bottom: 1px solid #e6e6e6;
     padding: 20px 0;
@@ -53,7 +58,11 @@ span {
 
 .section-paragraph {
     line-height: 2.0;
-    
+
+}
+
+.section-paragraph-select {
+    font-weight: bold;
 }
 
 
@@ -67,10 +76,10 @@ span {
 .navbar-section-paragraph {
     color: #FFFFFF;
     float: right;
-    
+
     font-weight: bolder;
     margin-top: 20px;
-    
+
 }
 
 .footer-section-paragraph {
@@ -86,7 +95,6 @@ span {
 
 #fatal-chart {
     margin-left: 20px;
-    margin-left: 0px;
 }
 
 #composite-chart {
@@ -103,6 +111,10 @@ span {
 #type-by-fatality-distribution {
     height: 100%;
     width: 100%;
+}
+
+h4 {
+    font-weight: bold;
 }
 
 
@@ -146,9 +158,9 @@ span {
 }
 
 @media(min-width:768px) and (max-width:1023px) {
-    
- #second-paragraph {
+
+    #second-paragraph {
         display: none;
-    }   
-    
+    }
+
 }
