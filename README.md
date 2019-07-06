@@ -3,31 +3,76 @@
 This data dashboard is designed to show the various types of attacks on humans by White Sharks globally over the a fifty year period between 1968 to 2018.
 Some of these attacks have resulted in fatality with the largest number of attacks during this period occuring in the USA and involvolving Surfers. 
 
-The dashboard is easy to use and interactive. The interactivity allows the user to drill down on a selection of sychronised pie and composite charts, 
-stacked bar chart, table and bar graphs to obtain such details as year, type, country, fatality, sex and age of the victim. The data was obtained from 
-"https://data.opendatasoft.com/explore/dataset/global-shark-attack", whish is a robust and API driven data website.
+The dashboard is easy to use and interactive. The interactivity allows the user to drill down on a selection of sychronised dropdown-selectors, pie charts, 
+composite chart, stacked bar chart, table and bar graph to obtain such details as year, type, country, fatality, sex and age of the victim. The data was 
+obtained from "https://data.opendatasoft.com/explore/dataset/global-shark-attack", which is a robust and API driven data website. This data is for information 
+purposes and will hopefully help us better understand this amazing creatures psychology when it comes to human interactions.
 
-[https://robsimons1.github.io/global-white-shark-attack-dashboard/]
+The link for the dashboard is: 
+*https://robsimons1.github.io/global-white-shark-attack-dashboard/*
 
 ## UX
 
+In order to make the user experience as easy and enjoyable as possibe I opted for a simple Single-Page Application (SPA) dashboard that utilises various 
+dropdown-selectors, pie charts, composite chart, stacked bar chart, table and bar graph. Also, headings, paragraphs and sentences that inform the user of 
+certain facts and guide the user through the dashboard. Refresh buttons are located in the Navbar, Centre and Footer of the page, so that the user is 
+able to navigate the osite and reset / control the site functionality. 
+
 The original concept for the dashboard page can be seen in the *suppoting_docs folder* under *wireframe1_global_white_shark_attacks.png* (original idea) and 
-*wireframe1_global_white_shark_attacks.png*, which is the latest idea for the structure of the dashboard.
+*wireframe2_global_white_shark_attacks.png*, which is the latest idea for the structure of the dashboard. These were created in Balsamiq. There are numerous 
+changes since wieframe1, mainly due to learning more about the capablities of d3.js, dc.js and crossfilter.  
+
+The dashboard is aimed at at users who share an interest in sharks, particularly White Sharks and would like to see some easily accessible graphical 
+data about White Shark attacks on humans. The user will be able to interactively use all of the dropdown-selectors pie charts, table and graphs. If 
+sections of the charts are hovered over then the user will see a count of attacks relating specifically to that section (e.g. Country, Age Range). If the 
+user clicks on any section of a chart (e.g. South Africa in the Country Pie Chart) then every other chart will synchroniously adjust to present corresponding 
+data that relates to the section that was clicked. This can be done numerous times, with the user clicking on any of the charts sections to drill down 
+into specific information that is required. Refresh Buttons are located in the Navbar, Centre and Footer of the dashboard that will reset all of the 
+charts and table.
+
+The information available to the user is:
+
+* Two short informative paragraphs giving facts about the White Sharks attacks on humans, history and population.
+* Year the attack took place. This is a fifty year range between 1968 - 2018.
+* Type of attack. Whether this was provoked, unprovoked or involved a boat.
+* Country the attack took place. In the last fifty years there have been recorded White Shark attacks in 19 different countries and the Atlantic Ocean.
+* Activity that the victim was doing at the time of the attack.
+* Sex of the victim.
+* Age of the victim.
+* Whether the attack was fatal or not.
 
 ## Features
 
 ### Existing Features
 
-**Nav Bar –** 
+The choice of features, buttons, selectors, charts and table available to the user are:
 
-**Header Image –**
+* **Nav Bar –** Contains alternative title (50 Year Global White Shark Attacks Data Dashboard) of dashboard for use on smaller devices (e.g. iPhone). 
+This is because the title and image below the Nav Bar does not show particularly well on smaller devices and elongates. The Nav Bar also has a 
+"Refresh Charts" button that will reset all of the charts on the dashboard. Also, a short sentence describing how to control the dashboard is floated 
+to the right of the Nav Bar stating "Hover or Click on Charts to select data for anaysis" to assist the user with the design functionality.   
+* **Resfresh Charts Buttons-** "Refresh Charts" buttons are conveniantly located in the Nav Bar, Centre and Footer of the dashboard that will reset 
+* the page and return the user to the position that they were located on the dashboard.
+* **Header Image –**
+* **Fatal Dropdown-Selector -** This allows the user to easily view 
+* **Country Dropdown-Selector -**
+* **Type Dropdown-Selector -**
+* **Activity Dropdown-Selector -**
+* **Country Pie Chart -**
+* **Age Pie Chart -**
+* **Fatality Pie Chart -**
+* **Country and Year Composite Line Graph -**
+* **Fifty Year Data Table -**
+* **Type / Fatality Stacked Bar Chart -**
+* **Activity Bar Chart -**
+ 
 
 ### Features left to implement
 
 ## Technologies Used
 The languages, frameworks, libraries and other tools utilised for building this data dashboard are:
 
-*	**HTML 5 -** The dashboard uses HTML5 as a fundamental basis for building the website.
+*	**HTML 5 -** The dashboard uses HTML5 as a fundamental basis for building the website. (mention semantic)
 
 *	**CSS3 -** The website uses CSS3 for styling of all elements within the website. It is linked from the each page to the *style.css* file and is used for all content, including such as layout of color and background, images, video, audio etc.
 
