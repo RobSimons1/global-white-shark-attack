@@ -2,6 +2,7 @@
 
 This data dashboard is designed to show the various types of attacks on humans by White Sharks globally over the a fifty year period between 1968 to 2018.
 Some of these attacks have resulted in fatality with the largest number of attacks during this period occuring in the USA and involvolving Surfers. 
+The highest recorded number of White Shark attacks during this period occured in 2015.
 
 The dashboard is easy to use and interactive. The interactivity allows the user to drill down on a selection of sychronised dropdown-selectors, pie charts, 
 composite chart, stacked bar chart, table and bar graph to obtain such details as year, type, country, fatality, sex and age of the victim. The data was 
@@ -57,6 +58,7 @@ to the right of the Nav Bar stating "Hover or Click on Charts to select data for
 * **Fatal Dropdown-Selector -** This allows the user to easily view 
 * **Country Dropdown-Selector -**
 * **Type Dropdown-Selector -**
+* **Year Dropdown-Selector -**
 * **Activity Dropdown-Selector -**
 * **Country Pie Chart -**
 * **Age Pie Chart -**

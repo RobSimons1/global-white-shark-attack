@@ -13,6 +13,8 @@ function makeGraphs(error, sharkData) {
     show_data_table(ndx);
 
     show_country_selector(ndx);
+    
+    show_year_selector(ndx);
 
     show_activity_selector(ndx);
     show_activity(ndx);
@@ -36,6 +38,15 @@ function show_country_selector(ndx) {
     var group = dim.group();
 
     dc.selectMenu("#country-selector")
+        .dimension(dim)
+        .group(group);
+}
+
+function show_year_selector(ndx) {
+    var dim = ndx.dimension(dc.pluck('Year'));
+    var group = dim.group();
+
+    dc.selectMenu("#year-selector")
         .dimension(dim)
         .group(group);
 }
