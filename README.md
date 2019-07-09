@@ -144,6 +144,8 @@ This README file is based on the Code Institute template.
 
 ### Media 
 
+Favicon Image downloaded from: https://www.shutterstock.com/image-vector/dangerous-sea-life-207907852?studio=1
+
 Shark and Surfer Image: https://usatunofficial.files.wordpress.com/2011/10/shark-in-a-wave-with-surfer.jpg
 
 Data obtained from: https://data.opendatasoft.com/explore/dataset/global-shark-attack%40public-us/export/
