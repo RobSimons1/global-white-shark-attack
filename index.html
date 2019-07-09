@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
 </head>
 
 <body>
@@ -38,7 +40,7 @@
 
 
                 <div class="col-xs-12 col-md-4 col-sm-6 text-centre">
-                    <p class="section-paragraph-select">Fatal Selector (displays count of fatalities): </p>
+                    <p class="section-paragraph-select">Fatal Selector (displays whether fatal Yes / No): </p>
                     <div id="fatal-selector"></div>
                     <div id="first-paragraph">
                         <p class="section-paragraph"><br>The White Shark, more commonly referred to as the "Great White," has been reported to be involved in more attacks on humans than any other shark. It's thought that they attack humans when they mistake diver and surfer silhouettes
@@ -167,7 +169,7 @@
             <div id="footer-details">
 
                 <a class="navbar-brand" href="#">Back to Top</a>
-                <div id="footer-refresh-button" button type="submit" class="btn btn-success" onClick="refreshPage()">Refresh Charts</button>
+                <div id="footer-refresh-button" button type="submit" class="btn btn-success" onClick="refreshPage()">Refresh Charts
                 </div>
                 <p class="footer-section-paragraph">Hover or Click on Graphs and Charts to select data for analysis</p>
             </div>
