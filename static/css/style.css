@@ -79,8 +79,13 @@ span {
     margin-right: 10px;
 }
 
-/* Remove underline from 'Back to Top' link in footer*/
+/* Remove hover underline from 'Back to Top' link in footer*/
 a:hover {
+    text-decoration: none;
+}
+
+/* Remove link underline from 'Back to Top' link in footer*/
+a:link {
     text-decoration: none;
 }
 
