@@ -16,10 +16,10 @@
 }
 
 .bg-shark-wave {
-    background-image: url('../../images/shark_surfer.jpg');
+    background-image: url('../../static/images/shark_surfer.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
+
     background-position: center;
     margin-bottom: 10px;
 }
@@ -72,6 +72,18 @@ span {
     padding-right: 0px;
     margin: 0px;
 }
+
+.brand {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+/* Remove underline from 'Back to Top' link in footer*/
+a:hover {
+    text-decoration: none;
+}
+
 
 .navbar-section-paragraph {
     color: #FFFFFF;
