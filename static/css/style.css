@@ -37,12 +37,14 @@ span {
 }
 
 #refresh-button {
+    display: inline-block;
     margin-top: 5px;
     margin-left: 15px;
 
 }
 
 #footer-refresh-button {
+    display: inline-block;
     margin: 5px 0px 5px 5px;
 }
 
