@@ -48,23 +48,33 @@ The information available to the user is:
 
 The choice of features, buttons, selectors, charts and table available to the user are:
 
-* **Nav Bar –** Contains alternative title (50 Year Global White Shark Attacks Data Dashboard) of dashboard for use on smaller devices (e.g. iPhone). 
+* **Nav Bar –** Contains homepage link and alternative title (50 Year Global White Shark Attacks Data Dashboard) of dashboard for use on smaller devices (e.g. iPhone). 
 This is because the title and image below the Nav Bar does not show particularly well on smaller devices and elongates. The Nav Bar also has a 
 "Refresh Charts" button that will reset all of the charts on the dashboard. Also, a short sentence describing how to control the dashboard is floated 
 to the right of the Nav Bar stating "Hover or Click on Charts to select data for anaysis" to assist the user with the design functionality.   
 * **Resfresh Charts Buttons-** "Refresh Charts" buttons are conveniantly located in the Nav Bar, Centre and Footer of the dashboard that will reset 
-* the page and return the user to the position that they were located on the dashboard.
-* **Header Image –**
-* **Fatal Dropdown-Selector -** This allows the user to easily view 
-* **Country Dropdown-Selector -**
-* **Type Dropdown-Selector -**
-* **Year Dropdown-Selector -**
-* **Activity Dropdown-Selector -**
-* **Country Pie Chart -**
-* **Age Pie Chart -**
-* **Fatality Pie Chart -**
-* **Country and Year Composite Line Graph -**
-* **Fifty Year Data Table -**
+the page and return the user to the position that they were located on the dashboard.
+* **Header Title Image –** The image displays a surfer encountering a wave with the silhouette of a white shark travelling past. The image represents the 
+the most common type of attack in the last fifty years, which are those that involve surfers. The image also diplays the title of the dashboard which is 
+designed in the colours of a White Shark (grey on top and white underneath). 
+* **Fatal Dropdown-Selector -** This allows the user to easily view the count of fatalities, whether yes, no or unknown. If the user clicks
+* on a Y, N or unknown, the entire dashboard will update to show information relating to that option.
+* **Country Dropdown-Selector -** This allows the user to eaily view the count of attacks in the all of the countries involved. If the user clicks
+* on a specific country, the entire dashboard will update to show information relating to that country. 
+* **Type Dropdown-Selector -** This allows the user to easily view the count of incident type from Boat, Invalid, Provoked and Unprovoked.
+* **Year Dropdown-Selector -** This allows the to choose a specific year to analyse, which is not a function available by clicking on the composite chart. 
+* **Activity Dropdown-Selector -** This allows the user to choose a specific activity that the victim was partaking in at the time of the attack.
+* **Country Pie Chart -** This pie chart displays the countries in which the attacks have occired and the number of attacks per country. If the user clicks
+* on a specific country, the entire dashboard will update to show information relating to that country.
+* **Age Pie Chart -** This pie chart displays the ages of the victims that are split in to ten year ranges. The ranges were chosen to reduce the number of 
+* slices in the chart. If the user clicks on a specific age range, the entire dashboard will update to show information relating to that age range.
+* **Fatality Pie Chart -** This pie chart allows the user to easily view the count of fatalities, whether yes, no or unknown in a graphical format.
+* **Country and Year Composite Line Graph -** This chart allows the user to visualise the countries in which the attacks occured and the year that they occurred
+* in. If the user hovers on any of the data points, the relative information will be be presented. A total line has been added to show the user the global total 
+* for each year in the fifty year period.
+* **Fifty Year Data Table -** This table shows the user the attack events in a tabulated format. The attacks are shown in descending chronological order and the 
+* table displays all of the information that is available on the dashboard. The easy to use "Last" and "Next" buttons allow the user to browse through the data available.
+* The tableis also interactive and will update in accordance with selections made in other charts.
 * **Type / Fatality Stacked Bar Chart -**
 * **Activity Bar Chart -**
  
@@ -91,7 +101,7 @@ The languages, frameworks, libraries and other tools utilised for building this 
 ## Testing
 
 Various methods of testing have been carried out to test the code of the website. Continuous testing throughout the development has been implemented to check the quality of the code. The aim is to check the functionality of the code on different devices (mobile, tablet, desktop) with an overall perspective of responsive and mobile first design.
-The site has been viewed and tested in **Firefox**, **Safari**, **Chrome** and **Explorer**. The devices used to test the site are **iPhone 5/SE**, **Samsung Galaxy**, 
+The site has been viewed and tested in **Firefox**, **Safari**, **Chrome** **Microsoft Edge** and **Explorer**. The devices used to test the site are **iPhone 5/SE**, **Samsung Galaxy**, 
 **iPad**, **iPad Pro** **iPhone X**, **iPhone 6/7/8**, **Hudle** and **Samsung laptop**. 
 
 The wireframe for the Home page can be seen in the *supporting_docs folder* under *homepage_wireframe* and this was used initially to plan the site and build around. 
