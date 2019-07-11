@@ -49,8 +49,10 @@ span {
 }
 
 #central-refresh-button {
-    margin: auto;
+    text-align: center;
+    
     display: block;
+    width: 100%;
 }
 
 .section {
