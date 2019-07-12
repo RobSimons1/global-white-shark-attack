@@ -74,9 +74,11 @@ designed in the colours of a White Shark (grey on top and white underneath).
 * for each year in the fifty year period.
 * **Fifty Year Data Table -** This table shows the user the attack events in a tabulated format. The attacks are shown in descending chronological order and the 
 * table displays all of the information that is available on the dashboard. The easy to use "Last" and "Next" buttons allow the user to browse through the data available.
-* The tableis also interactive and will update in accordance with selections made in other charts.
-* **Type / Fatality Stacked Bar Chart -**
-* **Activity Bar Chart -**
+* The table is also interactive and will update in accordance with selections made in other charts.
+* **Type / Fatality Stacked Bar Chart -** This stacked bar chart shows the Type of attack (e.g. Provoked, Unprovoked, Boat) and whether or not the attack resulted
+* in a fatality. The chart is interactive and will respond in accordance with sections clicked or other chart selections.
+* **Activity Bar Chart -** This bar chart diplays the specific activity that the victim was partaking in at the time of the attack. The chart is interactive and 
+* will respond in accordance with sections clicked or other chart selections. 
  
 
 ### Features left to implement
@@ -119,6 +121,8 @@ The main basic functions of the web site that required rigorous testing in diffe
       better user experience and clarity of design.   
 
 ## Issue List
+
+MENTION API ATTEMPT TO CONNECT 
 
   | Issue  |                 Description                     |       Solution                      |  
   | ------ |:-----------------------------------------------:|:-----------------------------------:|
