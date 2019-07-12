@@ -13,7 +13,7 @@ function makeGraphs(error, sharkData) {
     show_data_table(ndx);
 
     show_country_selector(ndx);
-    
+
     show_year_selector(ndx);
 
     show_activity_selector(ndx);
@@ -171,18 +171,18 @@ function show_agepi(ndx) {
     var name_dim = ndx.dimension(dc.pluck('AgeRange'));
     var country_attacks = name_dim.group();
     //var country_attacks = name_dim.group(function(v) {
-        //if (v < 15) return "12-14";
-        //else if (v < 20) return "15-19";
-        //else if (v < 30) return "20-29";
-        //else if (v < 40) return "30-39";
-        //else if (v < 50) return "40-49";
-        //else if (v < 60) return "50-59";
-        //else if (v < 70) return "60-69";
-        //else if (v < 75) return "70-74";
-        //else if (v === "UNKNOWN") return "Unknown";
+    //if (v < 15) return "12-14";
+    //else if (v < 20) return "15-19";
+    //else if (v < 30) return "20-29";
+    //else if (v < 40) return "30-39";
+    //else if (v < 50) return "40-49";
+    //else if (v < 60) return "50-59";
+    //else if (v < 70) return "60-69";
+    //else if (v < 75) return "70-74";
+    //else if (v === "UNKNOWN") return "Unknown";
     //});
-   // Function is not working with crossfilter when Age Pie Chart is clicked. Instead resorted to adding age range to .csv file.    
-        dc.pieChart('#age-chart')
+    // Function is not working with crossfilter when Age Pie Chart is clicked. Instead resorted to adding age range to .csv file.    
+    dc.pieChart('#age-chart')
         .height(400)
         .radius(600)
         .innerRadius(70)
@@ -206,7 +206,6 @@ function show_fatalpi(ndx) {
 
 function show_country_year(ndx) {
     var date_dim = ndx.dimension(dc.pluck('Year'));
-
 
     function attacks_by_country(Country) {
         return function(d) {
@@ -270,7 +269,6 @@ function show_country_year(ndx) {
         .useViewBoxResizing(true)
         .dimension(date_dim)
         .x(d3.scale.linear().domain([1968, 2018]))
-        //.xUnits(dc.units.linear)
         .xAxisLabel("Year")
         .yAxisLabel("Attacks")
         .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
@@ -347,6 +345,8 @@ function show_country_year(ndx) {
         .brushOn(false)
         .render();
 
+    //.function to convert xAxis tick format from 1,970 to 1968
+    compositeChart.xAxis().tickFormat(function(v) { return v; });
 }
 
 function show_data_table(ndx) {

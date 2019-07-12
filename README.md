@@ -19,7 +19,7 @@ dropdown-selectors, pie charts, composite chart, stacked bar chart, table and ba
 certain facts and guide the user through the dashboard. Refresh buttons are located in the Navbar, Centre and Footer of the page, so that the user is 
 able to navigate the osite and reset / control the site functionality. 
 
-The original concept for the dashboard page can be seen in the *suppoting_docs folder* under *wireframe1_global_white_shark_attacks.png* (original idea) and 
+The original concept for the dashboard page can be seen in the *supporting_docs folder* under *wireframe1_global_white_shark_attacks.png* (original idea) and 
 *wireframe2_global_white_shark_attacks.png*, which is the latest idea for the structure of the dashboard. These were created in Balsamiq. There are numerous 
 changes since wieframe1, mainly due to learning more about the capablities of d3.js, dc.js and crossfilter.  
 
