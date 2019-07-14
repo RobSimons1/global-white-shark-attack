@@ -345,7 +345,7 @@ function show_country_year(ndx) {
         .brushOn(false)
         .render();
 
-    //.function to convert xAxis tick format from 1,970 to 1968
+    //.function to convert xAxis tick format from 1,970 to 1968. Returns actual .csv value in correct date order.
     compositeChart.xAxis().tickFormat(function(v) { return v; });
 }
 

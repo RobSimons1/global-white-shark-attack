@@ -1,10 +1,10 @@
 # Global White Shark Dashboard 
 
 This data dashboard is designed to show the various types of attacks on humans by White Sharks globally over the a fifty year period between 1968 to 2018.
-Some of these attacks have resulted in fatality with the largest number of attacks during this period occuring in the USA and involvolving Surfers. 
-The highest recorded number of White Shark attacks during this period occured in 2015.
+Some of these attacks have resulted in fatality with the largest number of attacks during this period occurring in the USA and involving Surfers. 
+The highest recorded number of White Shark attacks during this period occurred in 2015.
 
-The dashboard is easy to use and interactive. The interactivity allows the user to drill down on a selection of sychronised dropdown-selectors, pie charts, 
+The dashboard is easy to use and interactive. The interactivity allows the user to drill down on a selection of synchronised dropdown-selectors, pie charts, 
 composite chart, stacked bar chart, table and bar graph to obtain such details as year, type, country, fatality, sex and age of the victim. The data was 
 obtained from "https://data.opendatasoft.com/explore/dataset/global-shark-attack", which is a robust and API driven data website. This data is for information 
 purposes and will hopefully help us better understand this amazing creatures psychology when it comes to human interactions.
@@ -14,14 +14,14 @@ The link for the dashboard is:
 
 ## UX
 
-In order to make the user experience as easy and enjoyable as possibe I opted for a simple Single-Page Application (SPA) dashboard that utilises various 
+In order to make the user experience as easy and enjoyable as possible I opted for a simple Single-Page Application (SPA) dashboard that utilises various 
 dropdown-selectors, pie charts, composite chart, stacked bar chart, table and bar graph. Also, headings, paragraphs and sentences that inform the user of 
 certain facts and guide the user through the dashboard. Refresh buttons are located in the Navbar, Centre and Footer of the page, so that the user is 
 able to navigate the osite and reset / control the site functionality. 
 
 The original concept for the dashboard page can be seen in the *supporting_docs folder* under *wireframe1_global_white_shark_attacks.png* (original idea) and 
 *wireframe2_global_white_shark_attacks.png*, which is the latest idea for the structure of the dashboard. These were created in Balsamiq. There are numerous 
-changes since wieframe1, mainly due to learning more about the capablities of d3.js, dc.js and crossfilter.  
+changes since wieframe1, mainly due to learning more about the capabilities of d3.js, dc.js and crossfilter.  
 
 The dashboard is aimed at at users who share an interest in sharks, particularly White Sharks and would like to see some easily accessible graphical 
 data about White Shark attacks on humans. The user will be able to interactively use all of the dropdown-selectors pie charts, table and graphs. If 
@@ -51,65 +51,80 @@ The choice of features, buttons, selectors, charts and table available to the us
 * **Nav Bar –** Contains homepage link and alternative title (50 Year Global White Shark Attacks Data Dashboard) of dashboard for use on smaller devices (e.g. iPhone). 
 This is because the title and image below the Nav Bar does not show particularly well on smaller devices and elongates. The Nav Bar also has a 
 "Refresh Charts" button that will reset all of the charts on the dashboard. Also, a short sentence describing how to control the dashboard is floated 
-to the right of the Nav Bar stating "Hover or Click on Charts to select data for anaysis" to assist the user with the design functionality.   
-* **Resfresh Charts Buttons-** "Refresh Charts" buttons are conveniantly located in the Nav Bar, Centre and Footer of the dashboard that will reset 
+to the right of the Nav Bar stating "Hover or Click on Charts to select data for analysis" to assist the user with the design functionality.   
+* **Refresh Charts Buttons-** "Refresh Charts" buttons are conveniently located in the Nav Bar, Centre and Footer of the dashboard that will reset 
 the page and return the user to the position that they were located on the dashboard.
 * **Header Title Image –** The image displays a surfer encountering a wave with the silhouette of a white shark travelling past. The image represents the 
-the most common type of attack in the last fifty years, which are those that involve surfers. The image also diplays the title of the dashboard which is 
+the most common type of attack in the last fifty years, which are those that involve surfers. The image also displays the title of the dashboard which is 
 designed in the colours of a White Shark (grey on top and white underneath). 
 * **Fatal Dropdown-Selector -** This allows the user to easily view the count of fatalities, whether yes, no or unknown. If the user clicks
 * on a Y, N or unknown, the entire dashboard will update to show information relating to that option.
-* **Country Dropdown-Selector -** This allows the user to eaily view the count of attacks in the all of the countries involved. If the user clicks
+* **Country Dropdown-Selector -** This allows the user to easily view the count of attacks in the all of the countries involved. If the user clicks
 * on a specific country, the entire dashboard will update to show information relating to that country. 
 * **Type Dropdown-Selector -** This allows the user to easily view the count of incident type from Boat, Invalid, Provoked and Unprovoked.
 * **Year Dropdown-Selector -** This allows the to choose a specific year to analyse, which is not a function available by clicking on the composite chart. 
 * **Activity Dropdown-Selector -** This allows the user to choose a specific activity that the victim was partaking in at the time of the attack.
-* **Country Pie Chart -** This pie chart displays the countries in which the attacks have occired and the number of attacks per country. If the user clicks
-* on a specific country, the entire dashboard will update to show information relating to that country.
+* **Country Pie Chart -** This pie chart displays the countries in which the attacks have occurred and the number of attacks per country. If the user clicks
+on a specific country, the entire dashboard will update to show information relating to that country.
 * **Age Pie Chart -** This pie chart displays the ages of the victims that are split in to ten year ranges. The ranges were chosen to reduce the number of 
-* slices in the chart. If the user clicks on a specific age range, the entire dashboard will update to show information relating to that age range.
+slices in the chart. If the user clicks on a specific age range, the entire dashboard will update to show information relating to that age range.
 * **Fatality Pie Chart -** This pie chart allows the user to easily view the count of fatalities, whether yes, no or unknown in a graphical format.
-* **Country and Year Composite Line Graph -** This chart allows the user to visualise the countries in which the attacks occured and the year that they occurred
-* in. If the user hovers on any of the data points, the relative information will be be presented. A total line has been added to show the user the global total 
-* for each year in the fifty year period.
+* **Country and Year Composite Line Graph -** This chart allows the user to visualise the countries in which the attacks occurred and the year that they occurred
+in. If the user hovers on any of the data points, the relative information will be be presented. A total line has been added to show the user the global total 
+for each year in the fifty year period.
 * **Fifty Year Data Table -** This table shows the user the attack events in a tabulated format. The attacks are shown in descending chronological order and the 
-* table displays all of the information that is available on the dashboard. The easy to use "Last" and "Next" buttons allow the user to browse through the data available.
-* The table is also interactive and will update in accordance with selections made in other charts.
+table displays all of the information that is available on the dashboard. The easy to use "Last" and "Next" buttons allow the user to browse through the data available.
+The table is also interactive and will update in accordance with selections made in other charts.
 * **Type / Fatality Stacked Bar Chart -** This stacked bar chart shows the Type of attack (e.g. Provoked, Unprovoked, Boat) and whether or not the attack resulted
-* in a fatality. The chart is interactive and will respond in accordance with sections clicked or other chart selections.
-* **Activity Bar Chart -** This bar chart diplays the specific activity that the victim was partaking in at the time of the attack. The chart is interactive and 
-* will respond in accordance with sections clicked or other chart selections. 
+in a fatality. The chart is interactive and will respond in accordance with sections clicked or other chart selections.
+* **Activity Bar Chart -** This bar chart displays the specific activity that the victim was partaking in at the time of the attack. The chart is interactive and 
+will respond in accordance with sections clicked or other chart selections. 
  
 
 ### Features left to implement
 
+* Use entire "https://data.opendatasoft.com/explore/dataset/global-shark-attack" data that includes all types of shark and more details.
+
+* Elaborate on Date and Time of day to see if there are any correlations.
+
+* 
+
 ## Technologies Used
 The languages, frameworks, libraries and other tools utilised for building this data dashboard are:
 
-*	**HTML 5 -** The dashboard uses HTML5 as a fundamental basis for building the website. (mention semantic)
+*	**HTML 5 -** The dashboard uses HTML5 as a fundamental basis for building the dashboard. Where possible semantic HTML is used to give the viewer a better understanding.
 
-*	**CSS3 -** The website uses CSS3 for styling of all elements within the website. It is linked from the each page to the *style.css* file and is used for all content, including such as layout of color and background, images, video, audio etc.
+*	**CSS3 -** The dashboard uses CSS3 for styling of all elements within the website. It is linked from the page to the *style.css* file and is used for all content, including such as layout of colours, navbar, background, images etc.
 
-*	**Bootstrap 3.7.6. -** The open-source Bootstrap framework has been used to implement some basic templates for forms, buttons and navigation. Bootstrap is also utilised to accommodate the responsive and mobile first design of the web page. [https://getbootstrap.com/]
+*	**Bootstrap 3.7.6. -** The open-source Bootstrap framework has been used to implement the layout of the dashboard. Bootstrap is also utilised to accommodate the responsive and mobile first design of the dashboard. [https://getbootstrap.com/]
 
-*	**Cloud9 AWS (Amazon) -** Cloud9, a cloud-based integrated development environment (IDE) that has been used to write, run, and debug the code used for the website. [https://c9.io/rsimons]
+* **JavaScript -** The dashboard uses Javascript to provide dynamic interactivity, as it is a full-fledged versatile programming language.
+
+* **jQuery -** The dashboard uses jQuery, as it simplifies a lot of complicated tasks from JavaScript, such as AJAX calls and DOM manipulation. [jquery.com/jquery-3.4.1]
+
+* **Crossfilter -** The graphs and charts on the dashboard are all linked using crossfilter, which manages the data behind the graphs and charts, allowing interaction with coordinated views and functioning. It synchronises all the charts when used.
+
+* **DC.js -** The dashboard uses DC.js for data visualisation and analysis. 
+
+* **D3.js -** The D3.js library allows manipulation of elements on the dashboard in the context of the dataset.
+
+*	**Cloud9 AWS (Amazon) -** Cloud9, a cloud-based integrated development environment (IDE) that has been used to write, run, and debug the code used for the dashboard. [https://c9.io/rsimons]
 
 *	**GitHub -** GitHub has been used for version control of the code by using Git functions in the control panel. Github was utilised frequently during the development of the website.  [https://github.com/]
 
-*	**Font Awesome -** The website uses Font Awesome for certain icons (e.g. icons in the Nav Bar). [https://fontawesome.com/v4.7.0/icons/]
-
-*	**Google Fonts-** The website uses Google fonts to accentuate certain text. [https://fonts.google.com/]
+*	**Google Fonts-** The dashboard uses Google fonts to accentuate certain text. [https://fonts.google.com/]
 
 ## Testing
 
-Various methods of testing have been carried out to test the code of the website. Continuous testing throughout the development has been implemented to check the quality of the code. The aim is to check the functionality of the code on different devices (mobile, tablet, desktop) with an overall perspective of responsive and mobile first design.
+Various methods of testing have been carried out to test the code of the dashboard. Continuous testing throughout the development has been implemented to check the quality of the code. 
+The aim is to check the functionality of the code on different devices (mobile, tablet, desktop) with an overall perspective of responsive and mobile first design.
 The site has been viewed and tested in **Firefox**, **Safari**, **Chrome** **Microsoft Edge** and **Explorer**. The devices used to test the site are **iPhone 5/SE**, **Samsung Galaxy**, 
-**iPad**, **iPad Pro** **iPhone X**, **iPhone 6/7/8**, **Hudle** and **Samsung laptop**. 
+**iPad**, **iPad Pro** **iPhone X**, **iPhone 6/7/8**, **Pixel 2**, **Pixel 2 XL** **Hudle2** and **Samsung laptop**. 
 
-The wireframe for the Home page can be seen in the *supporting_docs folder* under *homepage_wireframe* and this was used initially to plan the site and build around. 
-The opinions of numerous people were asked in the final stages of the project.
+The final desktop wireframe for the dashboard can be seen in the *supporting_docs folder* under *wireframe2_global_white_shark_attacks.png* and this was used initially to plan the dashboard and build around. 
+The opinions of numerous people including chat forums were asked in the final stages of the project.
 
-The main basic functions of the web site that required rigorous testing in different scenarios are listed below.
+The main basic functions of the dashboard that required rigorous testing in different scenarios are listed below.
 
 *	**Main Navigation** -
 
@@ -141,14 +156,14 @@ MENTION API ATTEMPT TO CONNECT
   
 ## Deployment
 
-The website is designed in the AWS Cloud9 environment and regularly commited and to GitHub after each crucial peice of coding. Using this method as a sanity check 
+The dashboard is designed in the AWS Cloud9 environment and regularly committed and to GitHub after each crucial piece of coding. Using this method as a sanity check 
 for the development enabled me to restore the site back to previous stages when it functioned correctly or easily find lost pieces of code. 
 
 The Git process utilised is as follows:
 
   1. Local Cloud9 environment used to build the site 
-  2. Commited files to the staging area 
-  3. Pushed files to the working environment, which then updates the repository and is also viewable as a link [https://robsimons1.github.io/the_sixth_row/] for testing on other devices and screen resolutions
+  2. Committed files to the staging area 
+  3. Pushed files to the working environment, which then updates the repository and is also viewable as a link [https://github.com/RobSimons1/global-white-shark-attack-dashboard] for testing on other devices and screen resolutions
 
 ## Credits 
 
