@@ -87,7 +87,7 @@ will respond in accordance with sections clicked or other chart selections.
 
 * Elaborate on Date and Time of day to see if there are any correlations.
 
-* 
+* Connect dashboard directly to API. This was originally attempted, but proved too unmanageable when it came to trying to keep the dashboard looking simple.
 
 ## Technologies Used
 The languages, frameworks, libraries and other tools utilised for building this data dashboard are:
@@ -110,7 +110,7 @@ The languages, frameworks, libraries and other tools utilised for building this 
 
 *	**Cloud9 AWS (Amazon) -** Cloud9, a cloud-based integrated development environment (IDE) that has been used to write, run, and debug the code used for the dashboard. [https://c9.io/rsimons]
 
-*	**GitHub -** GitHub has been used for version control of the code by using Git functions in the control panel. Github was utilised frequently during the development of the website.  [https://github.com/]
+*	**GitHub -** GitHub has been used for version control of the code by using Git functions in the control panel. Github was utilised frequently during the development of the dashboard.  [https://github.com/]
 
 *	**Google Fonts-** The dashboard uses Google fonts to accentuate certain text. [https://fonts.google.com/]
 
@@ -126,14 +126,24 @@ The opinions of numerous people including chat forums were asked in the final st
 
 The main basic functions of the dashboard that required rigorous testing in different scenarios are listed below.
 
-*	**Main Navigation** -
+*	**Main Navigation** 
+    * Hover mouse over all graphs and charts to ensure that they show the count of that particular section. Every pie-chart section and bar  or line should 
+      function in this way.
+    * Refresh chart buttons were tested to ensure that the user can refresh the page and where possible is returned to the nearest location that they were previously analysing.
+    * Table "Last" and "Next" buttons were rigorously tested to ensure that they function correctly.
+    * Once clicked the section of each graph or chart should be highlighted and all other graphs and charts and the table should conform and adjust to 
+      to this selection. This feature was heavily tested so that the user can analyse specific information easily.
+    * All of the drop down selectors were thoroughly tested so that they diplay the correct information.
 
-*	**Responsive / Mobile First design** -
-    * All of the **Home**; **Shows/Videos**; **Gigs/Members**; **Contact**  pages have a **Header**; **Section** and **Footer**. These needed to display correctly accross 
-      all devices and screen resolutions. primarily checks are required to ensure that the website collapses in to columns in mobile view and that the information is 
-      presented in a clear and legible fashion.
-    * The Sixth Row Logo in the heading was removed in tablet and mobile view in order to have the Nav Bar at the top of the page on all pages. This was done to provide a 
-      better user experience and clarity of design.   
+*	**Responsive / Mobile First design** 
+    * The dashboard page has a **Header**; **Main Section** and **Footer**. These needed to display correctly accross 
+      all devices and screen resolutions. primarily checks are required to ensure that the dashboard collapses in to columns in mobile view 
+      and that the information is presented in a clear and legible fashion.
+    * The header image and title was removed in mobile view in order to have the Nav Bar at the top of the page. This was done to provide a 
+      better user experience and clarity of design, as the image did not show well in a smaller view. 
+    * The table was removed in mobile view as it did not present well in this view and the data was too small if the table is shrunk. 
+      All of the data available in the table is also available in the graphs and charts.
+    * The second paragraph was removed in tablet view, as this utilised too much space and did not present well in tablet view.
 
 ## Issue List
 
@@ -185,7 +195,7 @@ Global Shark Attack: https://data.opendatasoft.com/explore/dataset/global-shark-
 
 Dataset: global-shark-attack@public-us; http://www.sharkattackfile.net/incidentlog.htm
 
-Opening Paragrapg Ref: https://www.cbsnews.com/pictures/five-most-dangerous-sharks-to-humans/
+Opening Paragraphs Ref: https://www.cbsnews.com/pictures/five-most-dangerous-sharks-to-humans/
 
 ### Acknowledgments
 
