@@ -1,6 +1,6 @@
 # Global White Shark Dashboard 
 
-This data dashboard is designed to show the various types of attacks on humans by White Sharks globally over the a fifty year period between 1968 to 2018.
+This data dashboard is designed to show the various types of attacks on humans by White Sharks globally over a fifty year period between 1968 to 2018.
 Some of these attacks have resulted in fatality with the largest number of attacks during this period occurring in the USA and involving Surfers. 
 The highest recorded number of White Shark attacks during this period occurred in 2015.
 
@@ -130,7 +130,7 @@ The main basic functions of the dashboard that required rigorous testing in diff
     * Hover mouse over all graphs and charts to ensure that they show the count of that particular section. Every pie-chart section and bar  or line should 
       function in this way.
     * Refresh chart buttons were tested to ensure that the user can refresh the page and where possible is returned to the nearest location that they were previously analysing.
-    * Table "Last" and "Next" buttons were rigorously tested to ensure that they function correctly.
+    * Table `Last` and `Next` buttons were rigorously tested to ensure that they function correctly.
     * Once clicked the section of each graph or chart should be highlighted and all other graphs and charts and the table should conform and adjust to 
       to this selection. This feature was heavily tested so that the user can analyse specific information easily.
     * All of the drop down selectors were thoroughly tested so that they diplay the correct information.
@@ -145,24 +145,40 @@ The main basic functions of the dashboard that required rigorous testing in diff
       All of the data available in the table is also available in the graphs and charts.
     * The second paragraph was removed in tablet view, as this utilised too much space and did not present well in tablet view.
 
+*	**Data** 
+    * The data used for the dashboard was exported from https://data.opendatasoft.com/explore/dataset/global-shark-attack%40public-us/export/, 
+      which also had the option of connecting directly to the API https://data.opendatasoft.com/explore/dataset/global-shark-attack%40public-us/api/, 
+      but this proved unmanageable due to the variations of spellings, capitalisation, size and non-uniformity of the data set. I decided to instead 
+      export the .csv file that was more manageable for the simplified data that I wanted to present. 
+
 ## Issue List
 
-MENTION API ATTEMPT TO CONNECT 
+
 
   | Issue  |                 Description                     |       Solution                      |  
   | ------ |:-----------------------------------------------:|:-----------------------------------:|
-  |   1    | Used rows for Homepage that created too much free space when viewing on resposive devices | Amended rows to columns |
-  |   2    | Audio players pushing margins out of sync | Amended max-width to 100% |
-  |   3    | Logo took up too much space in responsive views | Changed display to none in media query below tablet resolution |
-  |   4    | Videos too large in resolutions below tablet view | Added media query to amend video sizes below tablet views |
-  |   5    | Images and videos not linking correctly | Utilised relative formatting for links |
-  |   6    | 'Audioweb' font not legible in Safari browser | Changed font to 'Kanit' |
-  |   7    | Bootstrap 'col-xs-10 col-sm-10' not allowing Home video to play | Removed from home video Div |
-  |   8    | Too much space in mobile first margins | Decreased margin sizes |
-  |   9    | Needed to validate HTML for debugging purposes | Utilised W3 Markup Validation Service |
-  |   10   | Problem found during HTML validation with spaces in music and image file names | Replaced spaces with underscores and updated HTML |
-  |   11   | Needed to validate CSS for debugging purposes | Utilised jigsaw.W3 CSS Validator |
-  |   12   | -moz- ; -webkit- ; -o- showing as warnings in CSS validation | Left in CSS for viewing in different browsers |
+  |   1    |Attempted to connect dashboard directly to API but data proving unmanageable|Downloaded .csv file instead|
+  |   2    |Unable to download export whole dataset due to issue with website |downloaded each year separately|
+  |   3    |Issues with uniformity of the .csv data (e.g. spellings and capitalisation) |Amended these issues directly in .csv file|
+  |   4    |Composite chart , Stacked bar chart and Bar graph not scaling correctly on smaller devices |Used viewbox resize to scale correctly |
+  |   5    |Dates on Composite Chart X-axis displaying incorrectly (e.g. 1,985)|Function added to bottom of `show_country_year`  to correct this |
+  |   6    |Attempted to use Age Range function that would separate the ages Pie Chart into ranges |This did not connect to other charts. Added Age range column to .csv file |
+  |   7    |Queue, Crossfilter and and DC.js showing as ‘Undefined’ in main.js tab | `/*global varname*/` added to remove undefined variable errors |
+  |   8    |Header image and title took up too much space in responsive views | Changed display to none in media query below tablet resolution |
+  |   9    |”Next” and “Last” buttons did not work on Table |Event listener added to these buttons to globally rectify this |
+  |   10   |Explorer displaying the charts which use viewbox resizing too small |Decided to leave this, as browser being phased out and rarely used |
+  |   11   | | |
+  |   12   | | |
+  |   13   |Table not scaling correctly on smaller devices |Used media query to remove table from smaller devices |
+  |   14   |Needed to validate CSS for debugging purposes | Utilised jigsaw.W3 CSS Validator (zero errors) |
+  |   15   |Needed to validate JavaScript for debugging purposes | Utilised jshint.com (no errors) |
+  |   16   |Needed to validate HTML for debugging purposes | Utilised W3 Markup Validation Service (1 warning) |
+  |   17   |HTML Validation warning "Section lacks heading" | This warning can be ignored as does not affect code |
+  |   18   | | |
+  |   19   | | |
+  |   20   | | |
+  |   21   | | |
+
   
 ## Deployment
 
@@ -179,11 +195,11 @@ The Git process utilised is as follows:
 
 ### Content
 
-This README file is based on the Code Institute template.
+This README.md file is based on the Code Institute template.
 
 ### Media 
 
-Favicon Image downloaded from: https://www.shutterstock.com/image-vector/dangerous-sea-life-207907852?studio=1
+Favicon image downloaded from: https://www.shutterstock.com/image-vector/dangerous-sea-life-207907852?studio=1
 
 Favicon – created using http://www.favicomatic.com/done
 
@@ -191,11 +207,9 @@ Shark and Surfer Image: https://usatunofficial.files.wordpress.com/2011/10/shark
 
 Data obtained from: https://data.opendatasoft.com/explore/dataset/global-shark-attack%40public-us/export/
 
-Global Shark Attack: https://data.opendatasoft.com/explore/dataset/global-shark-attack%40public-us/table/
+Datasetinfo for global-shark-attack@public-us; http://www.sharkattackfile.net/incidentlog.htm
 
-Dataset: global-shark-attack@public-us; http://www.sharkattackfile.net/incidentlog.htm
-
-Opening Paragraphs Ref: https://www.cbsnews.com/pictures/five-most-dangerous-sharks-to-humans/
+CBS Interactive Inc.(2019): https://www.cbsnews.com/pictures/five-most-dangerous-sharks-to-humans/
 
 ### Acknowledgments
 

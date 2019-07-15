@@ -1,4 +1,4 @@
-// /*global varname*/ added to remove undeined variable errors 
+// /*global varname*/ added to remove undefined variable errors 
 /*global queue*/
 /*global crossfilter*/
 /*global dc*/
@@ -170,18 +170,7 @@ function show_countrypi(ndx) {
 function show_agepi(ndx) {
     var name_dim = ndx.dimension(dc.pluck('AgeRange'));
     var country_attacks = name_dim.group();
-    //var country_attacks = name_dim.group(function(v) {
-    //if (v < 15) return "12-14";
-    //else if (v < 20) return "15-19";
-    //else if (v < 30) return "20-29";
-    //else if (v < 40) return "30-39";
-    //else if (v < 50) return "40-49";
-    //else if (v < 60) return "50-59";
-    //else if (v < 70) return "60-69";
-    //else if (v < 75) return "70-74";
-    //else if (v === "UNKNOWN") return "Unknown";
-    //});
-    // Function is not working with crossfilter when Age Pie Chart is clicked. Instead resorted to adding age range to .csv file.    
+      
     dc.pieChart('#age-chart')
         .height(400)
         .radius(600)
@@ -211,7 +200,6 @@ function show_country_year(ndx) {
         return function(d) {
             if (d.Country === Country) {
                 return +d.Number;
-                // Number column added to .CSV file in order that function multiplies count by a numerical value (e.g. 1)    
             }
             else {
                 return 0;
