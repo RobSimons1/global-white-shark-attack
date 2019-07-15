@@ -167,16 +167,16 @@ The main basic functions of the dashboard that required rigorous testing in diff
   |   8    |Header image and title took up too much space in responsive views | Changed display to none in media query below tablet resolution |
   |   9    |”Next” and “Last” buttons did not work on Table |Event listener added to these buttons to globally rectify this |
   |   10   |Explorer displaying the charts which use viewbox resizing too small |Decided to leave this, as browser being phased out and rarely used |
-  |   11   | | |
-  |   12   | | |
+  |   11   |Second intro paragraph did not fit on tablet size and was left in row alone | Removed from tablet view using media query |
+  |   12   |Stacked bar chart did not read well when using percentages to diplay types of attacks that were fatal |Opted to use actual count as this was clearer|
   |   13   |Table not scaling correctly on smaller devices |Used media query to remove table from smaller devices |
   |   14   |Needed to validate CSS for debugging purposes | Utilised jigsaw.W3 CSS Validator (zero errors) |
   |   15   |Needed to validate JavaScript for debugging purposes | Utilised jshint.com (no errors) |
   |   16   |Needed to validate HTML for debugging purposes | Utilised W3 Markup Validation Service (1 warning) |
   |   17   |HTML Validation warning "Section lacks heading" | This warning can be ignored as does not affect code |
-  |   18   | | |
-  |   19   | | |
-  |   20   | | |
+  |   18   |X-axis titles on Activities bar graph not displaying correctly in horizontal view |Used `text-anchor: end !important` in CSS to angle text |
+  |   19   |Data in .csv file was causing more columns in graphs for the same variable (e.g. Body Boarding and Boogie Boarding) | Amended to .cvs variable names to make more uniform |
+  |   20   |Header `Refresh Charts` button was not positioning correctly in Windows Edge | Used `float: inherit` in CSS to fix |
   |   21   | | |
 
   
@@ -191,7 +191,7 @@ To deploy the project to Github the following steps were taken:
   2. Used Local AWS Cloud9 environment used to build the site
   3. Committed files to the staging area using bash terminal commands: `git status`; `git add (specify directory)`; `git commit -m"add message"`
   4. Pushed files to the working environment using `git push`, which then updates the repository and is also viewable as a link https://github.com/RobSimons1/global-white-shark-attack-dashboard for testing on other devices and screen resolutions
-  5. Published site from `master` branch using `settings` tab in the main page of the repository, selct `source` as `master branch`, then `save`
+  5. Published site from `master` branch using `settings` tab in the main page of the repository, select `source` as `master branch`, then `save`
   6. The repository can be cloned by clicking `Clone or Download` on the main page of the repository 
   7. In the Clone with HTTPs section, click the clipboard icon to copy the clone URL for the repository
   8. Open Git Bash Terminal
@@ -206,17 +206,17 @@ This README.md file is based on the Code Institute template.
 
 ### Media 
 
-Favicon image downloaded from: https://www.shutterstock.com/image-vector/dangerous-sea-life-207907852?studio=1
-
-Favicon – created using http://www.favicomatic.com/done
-
-Shark and Surfer Image: https://usatunofficial.files.wordpress.com/2011/10/shark-in-a-wave-with-surfer.jpg
+CBS Interactive Inc.(2019): https://www.cbsnews.com/pictures/five-most-dangerous-sharks-to-humans/
 
 Data obtained from: https://data.opendatasoft.com/explore/dataset/global-shark-attack%40public-us/export/
 
 Datasetinfo for global-shark-attack@public-us; http://www.sharkattackfile.net/incidentlog.htm
 
-CBS Interactive Inc.(2019): https://www.cbsnews.com/pictures/five-most-dangerous-sharks-to-humans/
+Favicon image downloaded from: https://www.shutterstock.com/image-vector/dangerous-sea-life-207907852?studio=1
+
+Favicon – created using http://www.favicomatic.com/done
+
+Shark and Surfer Image: https://usatunofficial.files.wordpress.com/2011/10/shark-in-a-wave-with-surfer.jpg
 
 ### Acknowledgments
 

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Allerta Stencil:100,200,300,400,500,600,700');
 
+/*------------------------------------Graph Axis*/
+
 #fifty-years .x.axis text {
     text-anchor: end !important;
     transform: rotate(-45deg);
@@ -15,6 +17,8 @@
     transform: rotate(-45deg);
 }
 
+/*------------------------------------Image*/
+
 .bg-shark-wave {
     background-image: url('../../static/images/shark_surfer.jpg');
     background-repeat: no-repeat;
@@ -22,6 +26,12 @@
 
     background-position: center;
     margin-bottom: 10px;
+}
+
+/*------------------------------------Headings*/
+
+h4 {
+    font-weight: bold;
 }
 
 h1 {
@@ -35,6 +45,8 @@ h1 {
 span {
     color: #CACACA;
 }
+
+/*------------------------------------Refresh Buttons*/
 
 #refresh-button {
     float: inherit;
@@ -54,6 +66,8 @@ span {
     display: block;
     width: 100%;
 }
+
+/*------------------------------------Sections/Header/Footer info*/
 
 .section {
     border-bottom: 1px solid #e6e6e6;
@@ -112,6 +126,8 @@ a:link {
     margin-top: 20px;
 }
 
+/*------------------------------------Charts*/
+
 #age-chart {
     margin-left: 20px;
 }
@@ -135,11 +151,6 @@ a:link {
     height: 100%;
     width: 100%;
 }
-
-h4 {
-    font-weight: bold;
-}
-
 
 /*------------------------------------Media queries*/
 
