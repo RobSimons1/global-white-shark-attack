@@ -96,11 +96,11 @@ The languages, frameworks, libraries and other tools utilised for building this 
 
 *	**CSS3 -** The dashboard uses CSS3 for styling of all elements within the website. It is linked from the page to the *style.css* file and is used for all content, including such as layout of colours, navbar, background, images etc.
 
-*	**Bootstrap 3.7.6. -** The open-source Bootstrap framework has been used to implement the layout of the dashboard. Bootstrap is also utilised to accommodate the responsive and mobile first design of the dashboard. [https://getbootstrap.com/]
+*	**Bootstrap 3.7.6. -** The open-source Bootstrap framework has been used to implement the layout of the dashboard. Bootstrap is also utilised to accommodate the responsive and mobile first design of the dashboard. https://getbootstrap.com/
 
 * **JavaScript -** The dashboard uses Javascript to provide dynamic interactivity, as it is a full-fledged versatile programming language.
 
-* **jQuery -** The dashboard uses jQuery, as it simplifies a lot of complicated tasks from JavaScript, such as AJAX calls and DOM manipulation. [jquery.com/jquery-3.4.1]
+* **jQuery -** The dashboard uses jQuery, as it simplifies a lot of complicated tasks from JavaScript, such as AJAX calls and DOM manipulation. jquery.com/jquery-3.4.1
 
 * **Crossfilter -** The graphs and charts on the dashboard are all linked using crossfilter, which manages the data behind the graphs and charts, allowing interaction with coordinated views and functioning. It synchronises all the charts when used.
 
@@ -108,11 +108,11 @@ The languages, frameworks, libraries and other tools utilised for building this 
 
 * **D3.js -** The D3.js library allows manipulation of elements on the dashboard in the context of the dataset.
 
-*	**Cloud9 AWS (Amazon) -** Cloud9, a cloud-based integrated development environment (IDE) that has been used to write, run, and debug the code used for the dashboard. [https://c9.io/rsimons]
+*	**Cloud9 AWS (Amazon) -** Cloud9, a cloud-based integrated development environment (IDE) that has been used to write, run, and debug the code used for the dashboard. https://c9.io/rsimons
 
-*	**GitHub -** GitHub has been used for version control of the code by using Git functions in the control panel. Github was utilised frequently during the development of the dashboard.  [https://github.com/]
+*	**GitHub -** GitHub has been used for version control of the code by using Git functions in the control panel. Github was utilised frequently during the development of the dashboard.  https://github.com/
 
-*	**Google Fonts-** The dashboard uses Google fonts to accentuate certain text. [https://fonts.google.com/]
+*	**Google Fonts-** The dashboard uses Google fonts to accentuate certain text. https://fonts.google.com/
 
 ## Testing
 
@@ -185,11 +185,18 @@ The main basic functions of the dashboard that required rigorous testing in diff
 The dashboard is designed in the AWS Cloud9 environment and regularly committed and to GitHub after each crucial piece of coding. Using this method as a sanity check 
 for the development enabled me to restore the site back to previous stages when it functioned correctly or easily find lost pieces of code. 
 
-The Git process utilised is as follows:
+To deploy the project to Github the following steps were taken:
 
-  1. Local Cloud9 environment used to build the site 
-  2. Committed files to the staging area 
-  3. Pushed files to the working environment, which then updates the repository and is also viewable as a link [https://github.com/RobSimons1/global-white-shark-attack-dashboard] for testing on other devices and screen resolutions
+  1. created a `master` branch in Github repository 
+  2. Used Local AWS Cloud9 environment used to build the site
+  3. Committed files to the staging area using bash terminal commands: `git status`; `git add (specify directory)`; `git commit -m"add message"`
+  4. Pushed files to the working environment using `git push`, which then updates the repository and is also viewable as a link https://github.com/RobSimons1/global-white-shark-attack-dashboard for testing on other devices and screen resolutions
+  5. Published site from `master` branch using `settings` tab in the main page of the repository, selct `source` as `master branch`, then `save`
+  6. The repository can be cloned by clicking `Clone or Download` on the main page of the repository 
+  7. In the Clone with HTTPs section, click the clipboard icon to copy the clone URL for the repository
+  8. Open Git Bash Terminal
+  9. Type `git clone`, and then paste the URL
+  10. Press `Enter`. A local clone will be created.
 
 ## Credits 
 
