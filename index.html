@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+    <!-- Navbar  -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -34,6 +34,7 @@
     </nav>
 
     <main>
+        <!-- Image and Header -->
         <section class="section">
             <div class="container">
                 <div class="row bg-shark-wave">
@@ -42,7 +43,7 @@
                     </div>
                 </div>
 
-
+                <!-- Fatal dropdown Selector and initial paragraph -->
                 <div class="col-xs-12 col-md-4 col-sm-6 text-centre">
                     <p class="section-paragraph-select">Fatal Selector (displays whether fatal Yes / No): </p>
                     <div id="fatal-selector"></div>
@@ -51,17 +52,15 @@
                             in the water during approaching from below the surface of the water. An alternative theory has also been suggested that Great Whites attack unfamiliar objects to test their potential as food. If true, that would help explain
                             their involvement over the years in myriad hit-and-run attacks near beaches. <br><b>CREDIT:<i> CBS Interactive Inc.(2019)</i></b>
                         </p>
-
-
                     </div>
                 </div>
-
+                <!-- Country dropdown Selector and Country Pie Chart -->
                 <div class="col-xs-12 col-md-4 col-sm-6">
                     <p class="section-paragraph-select">Select a Country from the Selector or Pie Chart:</p>
                     <div id="country-selector"></div>
                     <div id="country-chart"></div>
                 </div>
-
+                <!-- Type of incident dropdown Selector and secondary paragraph -->
                 <div class="col-xs-12 col-md-4 col-sm-6 text-centre">
                     <p class="section-paragraph-select">Type Selector (displays count of incident type): </p>
                     <div id="type-selector"></div>
@@ -70,13 +69,11 @@
                             daytime hours, Great Whites feed on marine animals - they don't like sea birds or sea otters particularly. Not very much is known about the size of the great white's total population. Described as a slow-growing animal with
                             low fertility rates, the Great White is considered at risk of overfishing. <br><b>CREDIT:<i> CBS Interactive Inc.(2019)</i></b>
                         </p>
-
                     </div>
                 </div>
             </div>
-
         </section>
-
+        <!-- Year dropdown Selector and Composite Chart -->
         <section class="section">
             <div class="container">
                 <div class="row">
@@ -89,10 +86,10 @@
                 </div>
             </div>
         </section>
+        <!-- Table and Last / Next buttons  -->
         <section class="section">
             <div class="container">
                 <div class="row">
-
                     <h4>Table showing descending chronological events over a fifty year period:</h4>
                     <table id="dc-data-table" class="table table-bordered">
                         <thead>
@@ -113,11 +110,10 @@
                         <input id="last" class="btn" type="Button" value="Last" />
                         <input id="next" class="btn" type="button" value="Next" />
                     </div>
-
-
                 </div>
             </div>
         </section>
+        <!-- Central Refresh Button -->
         <section class="section">
             <div class="container">
                 <div id="central-refresh-button">
@@ -126,6 +122,7 @@
                 </div>
             </div>
         </section>
+        <!-- Stacked Bar Chart -->
         <section class="section">
             <div class="container">
                 <div class="row">
@@ -134,13 +131,13 @@
                         <p class="section-paragraph">The types of attacks are split into four catagories with the highest frequency occuring whilst unprovoked.</p>
                         <div id="type-by-fatality-distribution" class="custom-chart"></div>
                     </div>
-
+                    <!-- Age of Victims Pie Chart -->
                     <div class="col-xs-12 col-lg-4 col-md-4 col-sm-6 text-center">
                         <h3> Pie Chart showing Ages of victims: </h3>
                         <p class="section-paragraph">The most frequent known age group is 20-29. The youngest is 12 and oldest is 74.</p>
                         <div id="age-chart"></div>
                     </div>
-
+                    <!-- Fatality Pie Chart -->
                     <div class="col-xs-12 col-lg-4 col-md-4 col-sm-6 text-center">
                         <h3> Pie Chart showing fatalities (Y/N):</h3>
                         <p class="section-paragraph">Only 50 0f 298 attacks were fatal. No 'Provoked' attacks ended in fatality.</p>
@@ -149,28 +146,27 @@
                 </div>
             </div>
         </section>
+        <!-- Activity Bar Graph -->
         <section class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-lg-12 text-center">
                         <h3> Types of activity that have resulted in White Shark attacks: </h3>
-
                         <p class="section-paragraph text-center">Of the 298 recorded attacks, 94 were incidents involving surfing.</p>
                         <div id="activity-selector"></div>
                         <div id="activity"></div>
-
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
+    <!--Footer  -->
     <footer class="footer">
         <div class="container-fluid">
             <div id="footer-details">
                 <a class="brand" href="index.html">Back to Top</a>
                 <div id="footer-refresh-button">
-                        <button type="submit" class="btn btn-success" onClick="refreshPage()">Refresh Charts</button>
+                    <button type="submit" class="btn btn-success" onClick="refreshPage()">Refresh Charts</button>
                 </div>
                 <p class="footer-section-paragraph">Hover or Click on Graphs and Charts to select data for analysis</p>
             </div>

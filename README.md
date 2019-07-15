@@ -177,7 +177,8 @@ The main basic functions of the dashboard that required rigorous testing in diff
   |   18   |X-axis titles on Activities bar graph not displaying correctly in horizontal view |Used `text-anchor: end !important` in CSS to angle text |
   |   19   |Data in .csv file was causing more columns in graphs for the same variable (e.g. Body Boarding and Boogie Boarding) | Amended to .cvs variable names to make more uniform |
   |   20   |Header `Refresh Charts` button was not positioning correctly in Windows Edge | Used `float: inherit` in CSS to fix |
-  |   21   | | |
+  |   21   |Is HTML semantic and self explanatory  | Added further comments to index.html file |
+  |   22   |Is main.js self explanatory  | Added further comments to main.js file |
 
   
 ## Deployment
