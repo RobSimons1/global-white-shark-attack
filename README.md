@@ -211,7 +211,7 @@ CBS Interactive Inc.(2019): https://www.cbsnews.com/pictures/five-most-dangerous
 
 Data obtained from: https://data.opendatasoft.com/explore/dataset/global-shark-attack%40public-us/export/
 
-Datasetinfo for global-shark-attack@public-us; http://www.sharkattackfile.net/incidentlog.htm
+Dataset info for global-shark-attack@public-us; http://www.sharkattackfile.net/incidentlog.htm
 
 Favicon image downloaded from: https://www.shutterstock.com/image-vector/dangerous-sea-life-207907852?studio=1
 
